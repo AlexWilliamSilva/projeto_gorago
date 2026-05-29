@@ -51,7 +51,7 @@
                 <!-- CARD -->
                 <div class="job-card">
 
-                    <div class="job-image"></div>
+                    <div class="job-image"><img src="../multimidia/logo_empresas/TechCorp.png" alt=""></div>
 
                     <div class="job-info">
                         <h2>Desenvolvedor de Software Front-End Senior</h2>
@@ -72,7 +72,7 @@
                 <!-- CARD -->
                 <div class="job-card">
 
-                    <div class="job-image"></div>
+                    <div class="job-image"><img src="../multimidia/logo_empresas/Nexora.png" alt=""></div>
 
                     <div class="job-info">
                         <h2>Engenheiro de Software</h2>
@@ -93,7 +93,7 @@
                 <!-- CARD -->
                 <div class="job-card">
 
-                    <div class="job-image"></div>
+                    <div class="job-image"><img src="../multimidia/logo_empresas/Pixelon.png" alt=""></div>
 
                     <div class="job-info">
                         <h2>Gerente de Projetos</h2>
@@ -113,7 +113,7 @@
 
             </div>
 
-            <button>Ver mais</button>
+            <button style="color: white;"><a href="candidato_pesquisa.php">Ver mais</a></button>
 
         </section>
 
@@ -192,7 +192,7 @@
 
             </div>
 
-            <button>Ver mais</button>
+            <button><a href="candidatura_process.php">Ver mais</a></button>
 
         </section>
 

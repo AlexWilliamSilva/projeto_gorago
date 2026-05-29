@@ -17,12 +17,18 @@
 
 <body>
 
+  <nav>
+    <?php
+      include_once "../includes/nav_empresa.php";
+     ?>
+  <nav>
+
   <!-- HERO -->
   <section class="hero">
 
     <div class="hero-content">
 
-      <h1>Olá, TechCorp! 👋</h1>
+      <h1>Olá, TechCorp!</h1>
 
       <p>Acompanhe seus processos seletivos.</p>
 
@@ -43,7 +49,7 @@
 
       <!-- BUTTON -->
       <button class="btn-vaga">
-        <a href="home-empresa1.html">
+        <a href="cadastro_vaga.php">
           + Publicar Nova Vaga
         </a>
       </button>
@@ -58,8 +64,6 @@
     <div class="jobs-header">
 
       <h2>Suas vagas</h2>
-
-      <a href="pre_selecao.php">Ver todas</a>
 
     </div>
 
@@ -76,7 +80,9 @@
           </span>
         </div>
 
-        <span class="arrow">›</span>
+        <a href="pre_selecao.php">
+          <span class="arrow">›</span>
+        </a>
 
       </div>
 

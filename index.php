@@ -78,7 +78,7 @@
                     <input type="text" placeholder="Cidade, estado ou remoto">
                 </div>
 
-                <button class="btn-search"><a href="autentication/candidato/login_candidato.html">Buscara</a></button>
+                <button class="btn-search"><a href="autentication/candidato/login_candidato.html">Buscar</a></button>
 
             </div>
 

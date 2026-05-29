@@ -16,9 +16,8 @@
         ?>
     </nav>
 
-    <!-- BOTÃO VOLTAR PADRONIZADO: Mesma posição externa e estrutura de imagem -->
-    <a href="cadastro_info_user_3.html" class="btn-voltar">
-        <img src="../imagens/icons_nav/voltar.svg" alt="Voltar para a etapa anterior">
+    <a href="home_candidato.php" class="btn-voltar">
+        <img src="../autentication/imagens/icons_nav/voltar.svg" alt="Voltar para a etapa anterior" style="width: 50px;">
     </a>
 
 

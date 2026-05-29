@@ -1,0 +1,465 @@
+/* ==========================================================================
+   1. VARIÁVEIS DE COR E CONFIGURAÇÕES GLOBAIS
+   ========================================================================== */
+:root {
+  --primary-blue: #0045c4;
+  --bg-light: #eef0f6;
+  --neutral-border: #dfe4ec;
+  --text-dark: #202226;
+  --text-secondary: #71809a;
+  --footer-dark: #111111;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background-color: var(--bg-light);
+  overflow-x: hidden;
+}
+
+/* ==========================================================================
+   2. NAVBAR SUPERIOR E CAMPOS DE BUSCA
+   ========================================================================== */
+.navbar {
+  width: 100%;
+  height: 80px;
+  background: #ffffff;
+  border-bottom: 2px solid var(--neutral-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-go {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--primary-blue);
+  letter-spacing: -1px;
+}
+
+.nav-search {
+  width: 540px; 
+  height: 48px; 
+  position: relative;
+}
+
+.nav-search input {
+  width: 100%;
+  height: 100%;
+  background-color: #f8fafc; 
+  border: 2px solid #e2e8f0; 
+  border-radius: 12px; 
+  padding: 0 20px 0 52px; 
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e293b; 
+  outline: none;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-search input::placeholder {
+  color: #94a3b8;
+  font-weight: 400;
+}
+
+.search-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #94a3b8;
+  font-size: 18px;
+  pointer-events: none; 
+  transition: color 0.25s ease;
+}
+
+.nav-search input:focus {
+  background-color: #ffffff; 
+  border-color: var(--primary-blue); 
+  box-shadow: 0 0 0 4px rgba(0, 69, 196, 0.12), 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.nav-search input:focus ~ .search-icon {
+  color: var(--primary-blue);
+}
+
+.nav-menu-btn {
+  font-size: 26px;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+/* CONTAINER DO CONTEÚDO */
+.main-container {
+  display: flex;
+  min-height: calc(100vh - 80px);
+}
+
+/* ==========================================================================
+   3. SIDEBAR DE FILTROS (DESIGN PREMIUM E REMOÇÃO DE BOLINHAS)
+   ========================================================================== */
+.sidebar-filters {
+  width: 340px; 
+  background-color: var(--primary-blue); 
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 24px rgba(0, 69, 196, 0.15);
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-bottom: 32px;
+}
+
+.sidebar-filters h2 {
+  color: #ffffff;
+  font-size: 34px;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.5px;
+}
+
+.btn-clear-filters {
+  background: transparent;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.btn-clear-filters a{
+    color: #fff;
+}
+
+.btn-clear-filters:hover {
+  color: #ffffff;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+.filters-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px; 
+}
+
+.filter-label {
+  display: block;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 100%;
+  height: 56px; 
+}
+
+.select-wrapper select {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border: 2px solid transparent;
+  border-radius: 14px; 
+  padding: 0 46px 0 52px; 
+  font-size: 16px;
+  font-weight: 600;
+  color: #1e293b; 
+  appearance: none; /* Oculta a seta padrão do navegador */
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.select-wrapper select:invalid,
+.select-wrapper select option[disabled] {
+  color: #64748b;
+  font-weight: 500;
+}
+
+.input-icon {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+  font-size: 18px;
+  z-index: 5;
+  pointer-events: none;
+  transition: color 0.25s ease;
+}
+
+.arrow-icon {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #64748b;
+  font-size: 14px;
+  pointer-events: none;
+  z-index: 5;
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), color 0.25s ease;
+}
+
+.select-wrapper select:focus {
+  border-color: #ffffff;
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, 0.25), 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.select-wrapper select:focus ~ .input-icon {
+  color: var(--primary-blue);
+}
+
+.select-wrapper select:focus ~ .arrow-icon {
+  transform: translateY(-50%) rotate(180deg);
+  color: var(--primary-blue);
+}
+
+.btn-filtrar {
+  margin-top: 16px;
+  height: 58px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 14px;
+  color: var(--primary-blue);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-filtrar i {
+  font-size: 16px;
+  transition: transform 0.25s ease;
+}
+
+.btn-filtrar:hover {
+  background-color: #f8fafc;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.16);
+}
+
+.btn-filtrar:hover i {
+  transform: rotate(20deg);
+}
+
+.btn-filtrar:active {
+  transform: translateY(1px);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================================================
+   4. CONTEÚDO E LISTA DE FEED DE VAGAS
+   ========================================================================== */
+.vagas-feed {
+  flex: 1;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.vaga-card {
+  background: #ffffff;
+  border: 2px solid transparent;
+  border-radius: 14px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+  cursor: pointer;
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+              box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1),
+              border-color 0.25s ease;
+}
+
+.vaga-logo-box {
+  width: 70px;
+  height: 70px;
+  background-color: #f0f4fc;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vaga-logo-img {
+  width: 65px;         
+  height: 65px;
+  border-radius: 10px;
+  object-fit: contain; 
+  display: block;
+}
+
+.vaga-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.empresa-nome {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 14px;
+}
+
+.tags-row {
+  display: flex;
+  gap: 10px;
+}
+
+.tag {
+  background-color: #eef2fa;
+  color: #657b9e;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.tag i {
+  font-size: 13px;
+}
+
+.vaga-card.active {
+  border-color: #58a0f0;
+  box-shadow: 0 6px 20px rgba(0, 69, 196, 0.06);
+}
+
+.vaga-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* ==========================================================================
+   5. FOOTER DA INTERFACE
+   ========================================================================== */
+.main-footer {
+  background-color: var(--footer-dark);
+  color: #ffffff;
+  padding: 60px 80px;
+}
+
+.footer-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 40px;
+}
+
+.footer-logo {
+  font-size: 42px;
+  font-weight: 900;
+  color: #ffffff;
+}
+
+.brand-sub {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-blue);
+  margin-bottom: 16px;
+}
+
+.copyright {
+  font-size: 13px;
+  color: #555555;
+}
+
+.footer-links-col h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.footer-links-col a {
+  display: block;
+  color: #aaaaaa;
+  font-size: 14px;
+  text-decoration: none;
+  margin-bottom: 12px;
+  transition: color 0.2s ease;
+}
+
+.footer-links-col a:hover {
+  color: #ffffff;
+}
+
+/* 1. ENCONTRE ESSA REGRA NO SEU CSS E ADICIONE A LINHA INDICADA */
+.vagas-feed {
+  flex: 1;
+  padding: 40px 60px;
+  display: flex;
+  flex-direction: column; /* ADICIONE ESTA LINHA: Força os elementos a empilharem verticalmente */
+  gap: 24px;
+}
+
+/* BOTÃO VOLTAR GLOBAL (POSIÇÃO INDEPENDENTE DO ZOOM) */
+.btn-voltar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 54px;         
+  height: 54px;
+  border-radius: 50%;  
+  background: #ffffff;
+  border: 3px solid #0045c4; 
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+  align-self: flex-start; 
+  
+  transition: all 0.2s ease-in-out;
+}
+
+
+.btn-voltar img {
+  width: 24px;  
+  height: 24px;
+  object-fit: contain;
+  display: block;
+}
+
+/* INTERAÇÕES DO MOUSE (Micro-animação suave) */
+.btn-voltar:hover {
+  transform: translateX(-4px); /* Sutil empurrão para a esquerda indicando retorno */
+  background: #f0f4fc;         /* Fundo ganha um tom azulado leve e moderno */
+  border-color: #002bb0;       /* Borda assume um tom levemente mais escuro */
+}
+
+.btn-voltar:active {
+  transform: translateX(-1px) scale(0.96);
+}
+
+

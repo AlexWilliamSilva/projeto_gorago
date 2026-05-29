@@ -1,0 +1,341 @@
+/* ==========================================================================
+   RESET GLOBAL E AJUSTES DE BASE
+   ========================================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    background-color: #ffffff; /* Fundo limpo e branco conforme a imagem */
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* CONTAINER DE CONTROLE DE ESCALA DA TELA */
+.page-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==========================================================================
+   HEADER / BARRA DO TOPO
+   ========================================================================== */
+.top-bar {
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    border-bottom: 1px solid #f1f3f7;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #1f2226;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: transform 0.2s ease;
+}
+
+.back-btn:hover {
+    transform: translateX(-3px);
+}
+
+.top-bar h1 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1f2226;
+    text-align: center;
+}
+
+.spacer {
+    width: 40px; /* Equilibra simetricamente o botão de voltar da esquerda */
+}
+
+/* ==========================================================================
+   CONTEÚDO PRINCIPAL (MAIN)
+   ========================================================================== */
+.main-content {
+    width: 100%;
+    max-width: 760px; /* Largura perfeita para centralizar o card do menu */
+    margin: 0 auto;
+    padding: 40px 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ==========================================================================
+   HERO SECTION (LOGO DO TOPO E IDENTIFICAÇÃO)
+   ========================================================================== */
+.company-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Caixa com o ícone do prédio azul */
+.company-logo-box {
+    width: 84px !important;
+    height: 84px !important;
+    background-color: #eef4ff !important;
+    border: 1px solid #dbe7ff !important;
+    border-radius: 18px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 20px !important;
+    box-shadow: 0 4px 12px rgba(21, 80, 255, 0.04) !important;
+    overflow: hidden !important; /* Corta a imagem perfeitamente nos cantos arredondados */
+    padding: 0 !important;        /* REMOVIDO: Remove a borda azul clara em volta da logo */
+}
+
+/* Regra para fazer a imagem ocupar 100% do bloco */
+.company-logo {
+    width: 100% !important;
+    height: 100% !important;
+    max-width: 100% !important;  
+    max-height: 100% !important;
+    object-fit: cover !important; /* MUDE PARA COVER: Faz a imagem preencher todo o espaço disponível */
+    display: block !important;
+}
+
+
+.company-logo-box i {
+    font-size: 36px;
+    color: #1550ff; /* Azul Royal da identidade visual */
+}
+
+
+.company-hero h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1d20;
+    margin-bottom: 6px;
+}
+
+.company-cnpj {
+    font-size: 14px;
+    font-weight: 500;
+    color: #8a94a6;
+}
+
+/* ==========================================================================
+   CARD DE MENU DE CONFIGURAÇÕES
+   ========================================================================== */
+.menu-card {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 1px solid #eef0f6;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03), 0 2px 6px rgba(0, 0, 0, 0.01);
+    overflow: hidden;
+}
+
+.menu-item {
+    width: 100%;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 28px;
+    text-decoration: none;
+    border-bottom: 1px solid #f6f8fb;
+    transition: background-color 0.2s ease;
+}
+
+.menu-item:hover {
+    background-color: #fafbfc;
+}
+
+.menu-item:last-of-type {
+    border-bottom: none;
+}
+
+.menu-item-left {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.menu-item-left span {
+    font-size: 15px;
+    font-weight: 600;
+    color: #2c3136;
+}
+
+/* Configurações universais do container de ícones coloridos */
+.icon-wrapper {
+    width: 38px;
+    height: 38px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* ==========================================================================
+   CRIAÇÃO DOS ÍCONES COM CSS PURO (SEM DEPENDER DE BIBLIOTECAS)
+   ========================================================================== */
+
+/* 1. ÍCONE DE ENGRENAGEM (Dados da Empresa) */
+.icon-blue { 
+    background-color: #eef4ff; 
+}
+.icon-blue::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border: 3px dashed #3b71ca;
+    border-radius: 50%;
+    position: absolute;
+}
+.icon-blue::after {
+    content: "";
+    width: 6px;
+    height: 6px;
+    background-color: #eef4ff;
+    border: 2px solid #3b71ca;
+    border-radius: 50%;
+    position: absolute;
+}
+
+/* 2. ÍCONE DE USUÁRIO (Gerenciar Equipe) */
+.icon-purple { 
+    background-color: #f3f0ff; 
+}
+/* Cabeça do boneco */
+.icon-purple::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    background-color: #6f42c1;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+}
+/* Corpo do boneco */
+.icon-purple::after {
+    content: "";
+    width: 16px;
+    height: 8px;
+    background-color: #6f42c1;
+    border-radius: 8px 8px 0 0;
+    position: absolute;
+    bottom: 9px;
+}
+
+/* 3. ÍCONE DE CARTÃO (Planos e Faturamento) */
+.icon-navy { 
+    background-color: #eef4ff; 
+}
+.icon-navy::before {
+    content: "";
+    width: 18px;
+    height: 12px;
+    border: 2px solid #1b3bb6;
+    border-radius: 3px;
+    position: absolute;
+}
+.icon-navy::after {
+    content: "";
+    width: 18px;
+    height: 3px;
+    background-color: #1b3bb6;
+    position: absolute;
+    top: 15px;
+}
+
+/* 4. ÍCONE DE SAÍDA / LOGOUT */
+.icon-red { 
+    background-color: #fff0f0; 
+}
+/* Seta de saída */
+.icon-red::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 6px solid #dc3545;
+    position: absolute;
+    right: 10px;
+}
+/* Barra de limite da porta */
+.icon-red::after {
+    content: "";
+    width: 10px;
+    height: 14px;
+    border: 2px solid #dc3545;
+    border-right: none;
+    position: absolute;
+    left: 11px;
+}
+
+/* ==========================================================================
+   ELEMENTOS DE SETAS LATERAIS (CHEVRONS)
+   ========================================================================== */
+.arrow-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease;
+}
+
+/* Desenho nativo da setinha para a direita (>) */
+.css-chevron-right {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #a0aec0;
+    border-right: 2px solid #a0aec0;
+    transform: rotate(45deg);
+}
+
+/* Desenho nativo do botão voltar barra do topo (<-) */
+.back-btn {
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.css-arrow-left {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    border-top: 2px solid #1f2226;
+    border-left: 2px solid #1f2226;
+    transform: rotate(-45deg);
+}
+
+/* Transição de hover nas linhas do menu */
+.menu-item:hover .arrow-area {
+    transform: translateX(4px);
+}
+
+/* ESTILIZAÇÃO DO ITEM DE LOGOUT */
+.logout-text {
+    color: #dc3545 !important;
+}
+
+.logout-arrow {
+    border-top-color: #dc3545;
+    border-right-color: #dc3545;
+    opacity: 0.4;
+}

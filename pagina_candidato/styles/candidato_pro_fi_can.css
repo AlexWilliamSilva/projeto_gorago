@@ -1,0 +1,349 @@
+/* VARIÁVEIS DO PROJETO */
+:root {
+  --primary-blue: #0045c4;
+  --bg-light: #f8fafc;
+  --neutral-border: #dfe4ec;
+  --text-dark: #202226;
+  --text-secondary: #71809a;
+  --text-placeholder: #94a3b8;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* RESET GLOBAL DE LINKS: Remove o estilo nativo (sublinhado e cor roxa/azul) */
+a {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--bg-light);
+  overflow-x: hidden;
+}
+
+/* NAVBAR PRINCIPAL */
+.navbar {
+  width: 100%;
+  height: 80px;
+  background: #ffffff;
+  border-bottom: 2px solid var(--neutral-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo-go {
+  font-size: 32px;
+  font-weight: 900;
+  color: var(--primary-blue);
+  letter-spacing: -1px;
+}
+
+.nav-search {
+  width: 540px;
+  height: 48px;
+  position: relative;
+}
+
+.nav-search input {
+  width: 100%;
+  height: 100%;
+  background-color: #f8fafc;
+  border: 2px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 0 20px 0 52px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #1e293b;
+  outline: none;
+  transition: all 0.25s ease;
+}
+
+.nav-search input:focus {
+  background-color: #ffffff;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 4px rgba(0, 69, 196, 0.12);
+}
+
+.search-icon {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--text-placeholder);
+  font-size: 18px;
+}
+
+.nav-menu-btn {
+  font-size: 26px;
+  color: var(--text-dark);
+  cursor: pointer;
+}
+
+/* FATOR DE ZOOM 75% */
+.page-scale {
+  transform: scale(0.75);
+  transform-origin: top left;
+  width: 133.33%;
+  min-height: 133.33vh;
+}
+
+/* CONTAINER DAS CANDIDATURAS */
+.candidaturas-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 40px 60px;
+}
+
+/* HEADER DA PÁGINA (Título + Voltar) */
+.page-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.back-link {
+  position: absolute;
+  left: 0;
+  font-size: 24px;
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+.back-link:hover {
+  transform: translateX(-4px);
+}
+
+.page-header h1 {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--text-dark);
+}
+
+/* TABS / ABAS DE NAVEGAÇÃO */
+.tabs-navigation {
+  display: flex;
+  width: 100%;
+  border-bottom: 2px solid var(--neutral-border);
+  margin-bottom: 48px;
+}
+
+.tab-btn {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-placeholder);
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  transition: color 0.25s ease;
+}
+
+.tab-btn:hover {
+  color: var(--text-secondary);
+}
+
+.tab-btn.active {
+  color: var(--primary-blue);
+}
+
+.tab-btn.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-blue);
+  border-radius: 99px;
+}
+
+/* ESTILIZAÇÃO DO LINK DA TAB SE VOCÊ MUDAR PARA TAG <a> NO HTML */
+.tabs-navigation a {
+  flex: 1;
+  padding: 20px 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-placeholder);
+  text-align: center;
+  position: relative;
+  transition: color 0.25s ease;
+  display: block;
+}
+
+.tabs-navigation a:hover {
+  color: var(--text-secondary);
+}
+
+.tabs-navigation a.active {
+  color: var(--primary-blue);
+}
+
+.tabs-navigation a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--primary-blue);
+  border-radius: 99px;
+}
+
+/* GRID DE CANDIDATURAS */
+.candidaturas-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* CARD DE CANDIDATURA */
+.candidatura-card {
+  background: #ffffff;
+  border: 1px solid var(--neutral-border);
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.015);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 230px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.candidatura-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 69, 196, 0.05);
+}
+
+.card-body {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.company-logo-box {
+  width: 64px;
+  height: 64px;
+  background-color: #f1f5f9;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.company-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.job-info h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.company-name {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--text-placeholder);
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  border-top: 1px solid #f1f5f9;
+  padding-top: 18px;
+}
+
+.status-tag {
+  padding: 8px 16px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* ==========================================================================
+   NOVOS STATUS ADICIONADOS PARA A PÁGINA "CANCELADAS"
+   ========================================================================== */
+
+/* Cor Cinza Escura para Cancelada por você */
+.status-tag.cinza-escuro {
+  background-color: #f1f5f9;
+  color: #475569;
+}
+
+/* Cor Laranja Sutil para Inscrição Incompleta */
+.status-tag.laranja-sutil {
+  background-color: #fff7ed;
+  color: #ea580c;
+}
+
+.update-text {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-placeholder);
+}
+
+/* BOTÃO VOLTAR GLOBAL (POSIÇÃO INDEPENDENTE DO ZOOM) */
+.btn-voltar {
+  position: absolute;
+  top: 96px;     /* Alinhado verticalmente abaixo da sua Navbar de 80px */
+  left: 40px;    /* Distância confortável do canto esquerdo da janela */
+  z-index: 9999; /* Fica por cima do efeito de escala do formulário */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 54px;   /* Diâmetro do círculo do botão */
+  height: 54px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #dde2ea;
+  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-voltar img {
+  width: 54px;   
+  height: 54px;
+  display: block;
+}
+
+/* INTERAÇÕES DO MOUSE */
+.btn-voltar:hover {
+  transform: translateX(-4px); /* Sutil empurrão para a esquerda indicando retorno */
+  background: #f7f9fc;
+  border-color: #0045c4;       /* Acende com o azul padrão da sua marca no hover */
+}
+
+.btn-voltar:active {
+  transform: translateX(-1px);
+}
+

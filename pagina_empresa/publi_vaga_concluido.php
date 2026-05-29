@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Cadastro Concluído</title>
 
-  <link rel="stylesheet" href="../styles/cadastro_conclusao.css" />
+  <link rel="stylesheet" href="styles/publi_vaga_concluido.css" />
 
   <link
     rel="stylesheet"
@@ -28,14 +28,13 @@
 
     <!-- DESCRIÇÃO -->
     <p>
-      Seu perfil foi criado com sucesso.
-      Sua empresa agora faz parte da GoraGO. Encontre talentos de forma rápida e eficiente.
+      Sua vaga foi publicada com Sucesso!
     </p>
 
     <!-- BOTÃO --> 
-     <a href="login_empresa.html">
+     <a href="home_empresa.php">
     <button class="btn">
-      Finalizar Cadastro
+      Concluir
     </button></a>
 
   </div>

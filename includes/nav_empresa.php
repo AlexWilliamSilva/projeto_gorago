@@ -4,145 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nav candidato - GoraGO</title>
+    <title>Nav empresa - GoraGO</title>
     <style>
-        /* RESET BÁSICO */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
         /* HEADER */
-        header {
+
+        header{
             width: 100%;
             height: 90px;
+
             background-color: white;
+
             display: flex;
             align-items: center;
             justify-content: space-between;
+
             padding: 0 50px;
+
             border-bottom: 1px solid #d9d9d9;
         }
 
         .logo img {
             width: 73px;
-            display: block;
         }
 
-        /* BARRA DE PESQUISA (CONTAINER ALTERADO) */
-        .search-box {
-            width: 500px;
-            height: 45px;
-            display: flex;
-            align-items: center;
-            gap: 20px; /* Distância perfeita entre a lupa CSS e o input */
-        }
-
-        /* ==========================================================================
-           LUPA FEITA PURAMENTE EM CSS (Substitui o <i class="fa-solid...">)
-           ========================================================================== */
-        .css-lens {
-            position: relative;
-            width: 20px;
-            height: 20px;
-            border: 2.5px solid #1f1f1f; /* Aro redondo da lupa */
-            border-radius: 50%;
-            display: inline-block;
-            flex-shrink: 0;
-        }
-
-        /* Cabo da Lupa feito com o pseudo-elemento ::after */
-        .css-lens::after {
-            content: "";
-            position: absolute;
-            bottom: -6px;
-            right: -6px;
-            width: 9px;
-            height: 2.5px;
-            background-color: #1f1f1f; /* Cor do cabo combinando com o aro */
-            transform: rotate(45deg); /* Inclinação perfeita do cabo */
-            border-radius: 2px;
-        }
-
-        .search-box input {
-            width: 100%;
-            height: 100%;
-            border-radius: 10px;
-            border: 1px solid #cfcfcf;
-            padding-left: 20px;
-            outline: none;
-            font-size: 14px;
-        }
-
-        /* ==========================================================================
-           COMPONENTE DE MENU DROPDOWN (AJUSTADO E CORRIGIDO)
-           ========================================================================== */
+        /* CONTAINER DO COMPONENTE */
         .profile_user {
-            position: relative;
+            position: relative; /* Mantém o menu flutuante preso ao botão da direita */
             display: flex;
             align-items: center;
         }
 
-        /* Esconde o checkbox */
+        /* Esconde completamente o input checkbox da tela */
         input[type="checkbox"].menu-checkbox {
             display: none !important;
         }
 
-        /* GATILHO DO BOTÃO AVATAR (CORRIGIDO PARA IMAGEM) */
+        /* O BOTÃO DE GATILHO (ÍCONE DE HAMBÚRGUER) */
         .menu-trigger {
-            width: 44px;
-            height: 44px;
-            border-radius: 50%;
-            overflow: hidden;
             cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
             user-select: none;
-            transition: transform 0.2s ease;
-            background-color: #dfe4ee; /* Caso a foto falhe, mostra um fundo neutro */
         }
 
-        .menu-trigger:hover {
-            transform: scale(1.05); /* Leve efeito de zoom ao passar o mouse */
+        .menu-trigger i {
+            font-size: 32px; /* Tamanho original que você usava no projeto */
+            color: #1f1f1f;
+            transition: color 0.2s ease;
         }
 
-        .menu-trigger img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
+        .menu-trigger:hover i {
+            color: #1550ff; /* Muda de cor ao passar o mouse */
         }
 
-        /* CAIXA DO POP-UP */
+        /* CAIXA DO POP-UP (ESCONDIDA POR PADRÃO) */
         .dropdown-menu-box {
             position: absolute;
-            top: 55px; 
-            right: 0;  
+            top: 50px; /* Distância para brotar logo abaixo do ícone */
+            right: 0;  /* Alinha rente ao canto direito da tela */
             width: 280px;
-            background-color: #ffffff;
+            background: white;
             border-radius: 16px;
             box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08), 0px 2px 6px rgba(0, 0, 0, 0.04);
             padding: 16px 0;
             z-index: 2000;
             
-            /* Estado oculto padrão */
+            /* Configuração de transição suave */
             display: none;
             opacity: 0;
             transform: translateY(-10px);
             transition: opacity 0.2s ease, transform 0.2s ease;
         }
 
-        /* Exibe o menu ao clicar */
+        /* MÁGICA DO CSS: Quando o usuário clica no ícone, o checkbox é marcado e o menu aparece */
         .menu-checkbox:checked ~ .dropdown-menu-box {
             display: block;
             opacity: 1;
             transform: translateY(0);
         }
 
-        /* INFORMAÇÕES DO USUÁRIO */
+        /* INFORMAÇÕES DO USUÁRIO (TOPO DO POP-UP) */
         .user-header-info {
             padding: 4px 20px 12px 20px;
             display: flex;
@@ -151,30 +93,31 @@
         }
 
         .user-name {
-            font-size: 15px;
+            font-size: 16px;
             font-weight: 700;
             color: #1f1f1f;
         }
 
         .user-email {
-            font-size: 13px;
+            font-size: 14px;
             font-weight: 400;
             color: #7f8a9b;
         }
 
+        /* LINHAS DIVISÓRIAS */
         .menu-divider {
             border: none;
             border-bottom: 1px solid #e4e7ef;
             margin: 8px 0;
         }
 
-        /* LINKS INTERNOS */
+        /* LINKS DE OPÇÃO */
         .menu-item-link {
             display: flex;
             align-items: center;
             gap: 12px;
             padding: 12px 20px;
-            font-size: 14px;
+            font-size: 15px;
             font-weight: 600;
             color: #1f1f1f;
             text-decoration: none;
@@ -185,19 +128,41 @@
             background-color: #f6f6f7;
         }
 
+        /* ÍCONES DO FONTAWESOME DENTRO DO MENU */
         .menu-icon {
-            font-size: 16px;
+            font-size: 18px;
             color: #68758b;
             width: 24px;
             text-align: center;
         }
 
+        /* LINK DE LOGOUT (VERMELHO) */
         .menu-item-link.logout-action {
             color: #ff3b30;
         }
 
         .menu-item-link.logout-action .menu-icon {
             color: #ff3b30;
+        }
+        /* Estiliza o label para ser um círculo perfeito */
+        .menu-trigger {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            overflow: hidden;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+            user-select: none;
+        }
+
+        /* Força a foto a preencher o círculo sem distorcer */
+        .menu-trigger img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
     </style>
 </head>
@@ -209,30 +174,28 @@
             <img src="../multimidia/logo_empresas/logonav.png" alt="GoraGO">
         </div>
 
-        <!-- BARRA DE PESQUISA ATUALIZADA -->
-        <div class="search-box">
-            <!-- Nova tag span que gera a lupa inteiramente via CSS -->
-            <span class="css-lens"></span>
-            <input type="text" placeholder="Busque por palavras chaves ou cargos">
-        </div>
 
         <!-- CONTAINER DO PERFIL -->
         <div class="profile_user">
+
+            <!-- 1. O checkbox (continua invisível) -->
             <input type="checkbox" id="menu-toggle" class="menu-checkbox">
 
+            <!-- 2. O Label com a IMAGEM dentro (Ele é o botão de clique) -->
             <label for="menu-toggle" class="menu-trigger" title="Menu do Usuário">
-                <img src="../multimidia/avatar_candidato.png" alt="Foto de Alex da Silva">
+                <img src="../multimidia/logo_empresas/Techcorp.png" alt="Foto da Tech Corp">
             </label>
 
+            <!-- 3. O Pop-up flutuante -->
             <div class="dropdown-menu-box">
                 <div class="user-header-info">
-                    <span class="user-name">Alex da Silva</span>
-                    <span class="user-email">alex.silva@gmail.com</span>
+                    <span class="user-name">Tech Corp</span>
+                    <span class="user-email">tech.corp@gmail.com</span>
                 </div>
 
                 <hr class="menu-divider">
 
-                <a href="../pagina_candidato/candidato_perfil.php" class="menu-item-link">
+                <a href="empresa_perfil.php" class="menu-item-link">
                     <i class="fa-solid fa-gear menu-icon"></i>
                     Configurações da conta
                 </a>
@@ -245,6 +208,8 @@
                 </a>
             </div>
         </div>
+
+
     </header>
 </body>
 

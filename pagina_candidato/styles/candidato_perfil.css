@@ -207,3 +207,42 @@ body {
 .badge-tag:hover {
     background-color: #003fe6;
 }
+
+
+/* BOTÃO VOLTAR GLOBAL (POSIÇÃO INDEPENDENTE DO ZOOM) */
+.btn-voltar {
+  position: absolute;
+  top: 96px;     /* Alinhado verticalmente abaixo da sua Navbar de 80px */
+  left: 40px;    /* Distância confortável do canto esquerdo da janela */
+  z-index: 9999; /* Fica por cima do efeito de escala do formulário */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 54px;   /* Diâmetro do círculo do botão */
+  height: 54px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #dde2ea;
+  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-voltar img {
+  width: 54px;   
+  height: 54px;
+  display: block;
+}
+
+/* INTERAÇÕES DO MOUSE */
+.btn-voltar:hover {
+  transform: translateX(-4px); /* Sutil empurrão para a esquerda indicando retorno */
+  background: #f7f9fc;
+  border-color: #0045c4;       /* Acende com o azul padrão da sua marca no hover */
+}
+
+.btn-voltar:active {
+  transform: translateX(-1px);
+}

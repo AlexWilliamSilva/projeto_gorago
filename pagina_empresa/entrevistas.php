@@ -34,7 +34,7 @@
             <div class="candidate-sub">
               Desenvolvedor de Software
               <span class="dot"></span>
-              <span class="match">65% Match</span>
+              <span class="match">72% Match</span>
             </div>
           </div>
         </div>

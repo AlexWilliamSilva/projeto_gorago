@@ -127,18 +127,17 @@
 
 <body>
     <?php
-    // Detecta o nome do arquivo PHP atual (Ex: 'pre_selecao.php', 'aprovados.php')
-    $pagina_atual = basename($_SERVER['SCRIPT_NAME']);
+        $pagina_atual = basename($_SERVER['SCRIPT_NAME']);
     ?>
 
     <!-- HEADER -->
     <header class="topbar">
-        <a href="home_empresa.html" class="nav-icon"><img src="../multimidia/icons_nav/voltar.svg" alt="Voltar"></a> 
+        <a href="home_empresa.php" class="nav-icon"><img src="../multimidia/icons_nav/voltar.svg" alt="Voltar"></a> 
         <div class="title-wrapper">
             <h1>Desenvolvedor(a) Front-end Senior</h1>
             <p>Gestão de Candidatos</p>
         </div>
-        <div class="nav-icon">⚲</div>
+        
     </header>
 
     <!-- TABS -->
