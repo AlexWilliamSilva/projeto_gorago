@@ -244,16 +244,13 @@ body {
 .checkbox-area input {
   width: 28px;
   height: 28px;
-
   border-radius: 8px;
-
   accent-color: #1140d4;
 }
 
 .checkbox-area label {
   font-size: 14px;
   font-weight: 500;
-
   color: #202226;
 }
 

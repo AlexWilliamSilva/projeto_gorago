@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Experiência</title>
+  <title>Criar Conta - Experiência</title>
 
-  <link rel="stylesheet" href="../styles/cadastro_info_user_3.css" />
+  <link rel="stylesheet" href="../styles/cadastro_info_user.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,165 +24,102 @@
 
 <body>
 
+  <!-- BOTÃO VOLTAR PADRONIZADO: Mesma posição externa e estrutura de imagem -->
+  <a href="cadastro_info_user_2.html" class="btn-voltar">
+    <img src="../imagens/icons_nav/voltar.svg" alt="Voltar para a etapa anterior">
+  </a>
+
   <div class="page-scale">
 
     <!-- HEADER -->
     <header class="topbar">
-
       <div class="back-area">
-
-        <span class="back-icon"><a href="cadastro-pg 3.html">
-          &#8592;</a>
-        </span>
-
-        <h1>Experiência</h1>
-
+        <h1>Criar Conta</h1>
       </div>
-
     </header>
 
     <!-- PROGRESS -->
     <section class="progress-section">
-
       <div class="progress-top">
-
-        <span class="step-text">
-          Etapa 3 de 4
-        </span>
-
-        <span class="percent">
-          75%
-        </span>
-
+        <span class="step-text">Etapa 3 de 4</span>
+        <span class="percent">75%</span>
       </div>
-
       <div class="progress-bar">
-
-        <div class="progress-fill"></div>
-
+        <div class="progress-fill" style="width: 75%;"></div>
       </div>
-
     </section>
 
-    <!-- CONTENT -->
+    <!-- FORM -->
     <main class="content">
 
       <div class="form-header">
-
         <h2>Experiência Profissional</h2>
-
-        <p>
-          Adicione sua experiência mais recente.
-        </p>
-
+        <p>Adicione sua experiência mais recente.</p>
       </div>
 
-      <!-- CARD -->
       <div class="form-card">
 
         <!-- CARGO -->
         <div class="input-group">
-
           <label>Cargo</label>
-
           <div class="input-field">
-
             <i class="fa-solid fa-briefcase"></i>
-
-            <input
-              type="text"
-              placeholder="Ex: Desenvolvedor Front-end Junior"
-            >
-
+            <input type="text" placeholder="Ex: Desenvolvedor Front-end Junior">
           </div>
-
         </div>
 
         <!-- EMPRESA -->
         <div class="input-group">
-
           <label>Empresa</label>
-
           <div class="input-field">
-
             <i class="fa-regular fa-building"></i>
-
-            <input
-              type="text"
-              placeholder="Ex: Tech Solutions Ltda"
-            >
-
+            <input type="text" placeholder="Ex: Tech Solutions Ltda">
           </div>
-
         </div>
 
         <!-- DATAS -->
-        <div class="date-grid">
+        <div class="date-grid" style="display: flex; gap: 20px; width: 100%;">
 
-          <div class="input-group">
-
+          <div class="input-group" style="flex: 1;">
             <label>Mês/Ano Início</label>
-
-            <div class="input-field center">
-
-              <input
-                type="text"
-                placeholder="MM/AAAA"
-              >
-
+            <div class="input-field">
+              <i class="fa-regular fa-calendar"></i>
+              <input type="date" placeholder="MM/AAAA">
             </div>
-
           </div>
 
-          <div class="input-group">
-
+          <div class="input-group" style="flex: 1;">
             <label>Mês/Ano Fim</label>
-
-            <div class="input-field center">
-
-              <input
-                type="text"
-                placeholder="MM/AAAA"
-              >
-
+            <div class="input-field">
+              <i class="fa-regular fa-calendar-check"></i>
+              <input type="date" placeholder="MM/AAAA">
             </div>
-
           </div>
 
         </div>
 
-        <!-- CHECK -->
+        <!-- CHECKBOX CUSTOMIZADO -->
         <div class="checkbox-area">
-
-          <input
-            type="checkbox"
-            id="current-job"
-          >
-
-          <label for="current-job">
-            Trabalho aqui atualmente
+          <input type="checkbox" id="current-job">
+          <label for="current-job" class="checkbox-label">
+            <span>Trabalho aqui atualmente</span>
           </label>
-
         </div>
 
       </div>
 
-      <!-- ADD EXPERIENCE -->
-      <button class="add-btn">
-
+      <!-- BOTÃO ADICIONAR OUTRA EXPERIÊNCIA PADRONIZADO -->
+      <button type="button" class="add-btn">
         <i class="fa-solid fa-plus"></i>
-
-        Adicionar outra experiência
-
+        <span>Adicionar outra experiência</span>
       </button>
 
-      <!-- CONTINUE -->
+      <!-- BUTTON CONTINUAR PADRONIZADO -->
       <button class="continue-btn">
         <a href="cadastro_info_user_4.html">
-        Continuar
+          <span>Continuar</span>
+          <i class="fa-solid fa-angle-right"></i>
         </a>
-        <i class="fa-solid fa-angle-right"></i>
-
       </button>
 
     </main>

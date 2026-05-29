@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - GoraGO</title>
 
-    <link rel="stylesheet" href="styles_candidato/home_candidato.css">
+    <link rel="stylesheet" href="../styles_candidato/home_candidato.css">
 </head>
 <body>
 
     <!-- HEADER -->
     <header>
         <div class="logo">
-            <img src="multimidia/logo_empresas/logonav.png" alt="GoraGO">
+            <img src="../multimidia/logo_empresas/logonav.png" alt="GoraGO">
         </div>
 
         <div class="search-box">
@@ -207,12 +207,6 @@
         </section>
 
     </main>
-
-    <footer>
-        <?php
-            include_once "includes/footer.php";
-        ?>
-    </footer>
 
 </body>
 </html>

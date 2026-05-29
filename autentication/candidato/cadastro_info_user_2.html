@@ -4,9 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 
-  <title>Formação</title>
+  <title>Criar Conta - Formação</title>
 
-  <link rel="stylesheet" href="../styles/cadastro_info_user_2.css" />
+  <link rel="stylesheet" href="../styles/cadastro_info_user.css" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,139 +24,92 @@
 
 <body>
 
+  <!-- BOTÃO VOLTAR PADRONIZADO: Mesma posição externa e estrutura de imagem -->
+  <a href="cadastro_info_user.html" class="btn-voltar">
+    <img src="../imagens/icons_nav/voltar.svg" alt="Voltar para a etapa anterior">
+  </a>
+
   <div class="page-scale">
 
     <!-- HEADER -->
     <header class="topbar">
-
       <div class="back-area">
-
-        <span class="back-icon"><a href="cadastro-pg 2.html">
-          &#8592;</a>
-        </span>
-
-        <h1>Formação</h1>
-
+        <h1>Criar Conta</h1>
       </div>
-
     </header>
 
     <!-- PROGRESS -->
     <section class="progress-section">
-
       <div class="progress-top">
-
-        <span class="step-text">
-          Etapa 2 de 4
-        </span>
-
-        <span class="percent">
-          50%
-        </span>
-
+        <span class="step-text">Etapa 2 de 4</span>
+        <span class="percent">50%</span>
       </div>
-
       <div class="progress-bar">
-
-        <div class="progress-fill"></div>
-
+        <div class="progress-fill" style="width: 50%;"></div>
       </div>
-
     </section>
 
-    <!-- CONTENT -->
+    <!-- FORM -->
     <main class="content">
 
       <div class="form-header">
-
         <h2>Formação Acadêmica</h2>
-
-        <p>
-          Qual seu grau de escolaridade atual?
-        </p>
-
+        <p>Qual seu grau de escolaridade atual?</p>
       </div>
 
-      <!-- CARD -->
       <div class="form-card">
 
         <!-- NIVEL -->
         <div class="input-group">
-
           <label>Nível de Formação</label>
-
           <div class="input-field">
-
-            <input type="text">
-
+            <i class="fa-solid fa-graduation-cap"></i>
+            <input type="text" placeholder="Ex: Ensino Superior">
           </div>
-
         </div>
 
         <!-- CURSO -->
         <div class="input-group">
-
           <label>Nome do Curso</label>
-
           <div class="input-field">
-
             <i class="fa-regular fa-bookmark"></i>
-
-            <input
-              type="text"
-              placeholder="Ex: Ciência da Computação"
-            >
-
+            <input type="text" placeholder="Ex: Ciência da Computação">
           </div>
-
         </div>
 
         <!-- INSTITUIÇÃO -->
         <div class="input-group">
-
           <label>Instituição de Ensino</label>
-
           <div class="input-field">
-
             <i class="fa-regular fa-building"></i>
-
-            <input
-              type="text"
-              placeholder="Ex: Universidade XYZ"
-            >
-
+            <input type="text" placeholder="Ex: Universidade XYZ">
           </div>
-
         </div>
 
         <!-- SITUAÇÃO -->
         <div class="input-group">
+  <label>Situação</label>
+  <div class="status-buttons">
+    
+    <!-- Opção 1: Cursando -->
+    <input type="radio" id="cursando" name="situacao_opcao" value="cursando" checked>
+    <label for="cursando" class="status-btn">Cursando</label>
 
-          <label>Situação</label>
+    <!-- Opção 2: Concluído -->
+    <input type="radio" id="concluido" name="situacao_opcao" value="concluido">
+    <label for="concluido" class="status-btn">Concluído</label>
 
-          <div class="status-buttons">
-
-            <button class="status-btn active">
-              Cursando
-            </button>
-
-            <button class="status-btn">
-              Concluído
-            </button>
-
-          </div>
-
-        </div>
+  </div>
+</div>
 
       </div>
 
-      <!-- BUTTON -->
+      <!-- BUTTON CONTINUAR PADRONIZADO -->
       <button class="continue-btn">
         <a href="cadastro_info_user_3.html">
-        Continuar
+          <span>Continuar</span>
+          <i class="fa-solid fa-angle-right"></i>
         </a>
-        <i class="fa-solid fa-angle-right"></i>
-
       </button>
 
     </main>

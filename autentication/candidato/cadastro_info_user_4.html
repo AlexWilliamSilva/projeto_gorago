@@ -3,112 +3,114 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Habilidades</title>
+  <title>Criar Conta - Habilidades</title>
 
   <!-- Fonte -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://googleapis.com" rel="stylesheet">
 
   <!-- CSS -->
+  <link rel="stylesheet" href="../styles/cadastro_info_user.css">
   <link rel="stylesheet" href="../styles/cadastro_info_user_4.css">
 
-  <!-- Ícones -->
-  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Ícones (Alinhado com as outras páginas usando Font Awesome) -->
+  <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 <body>
 
+  <!-- BOTÃO VOLTAR PADRONIZADO: Mesma posição externa e estrutura de imagem -->
+  <a href="cadastro_info_user_3.html" class="btn-voltar">
+    <img src="../imagens/icons_nav/voltar.svg" alt="Voltar para a etapa anterior">
+  </a>
+
+  <div class="page-scale">
+
     <!-- HEADER -->
     <header class="topbar">
-
       <div class="back-area">
-
-        <span class="back-icon"><a href="cadastro-pg 4.html">
-          &#8592;</a>
-        </span>
-
-        <h1>Formação</h1>
-
+        <h1>Criar Conta</h1>
       </div>
-
     </header>
-  <!-- PROGRESSO -->
-  <section class="progress-section">
-    <div class="progress-info">
-      <span>Etapa 4 de 4</span>
-      <span>100%</span>
-    </div>
 
-    <div class="progress-bar">
-      <div class="progress-fill"></div>
-    </div>
-  </section>
+    <!-- PROGRESSO -->
+    <section class="progress-section">
+      <div class="progress-top">
+        <span class="step-text">Etapa 4 de 4</span>
+        <span class="percent">100%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill" style="width: 100%;"></div>
+      </div>
+    </section>
 
-  <!-- CONTEÚDO -->
-  <main class="container">
+    <!-- CONTEÚDO -->
+    <main class="content">
 
-    <div class="title-area">
-      <h2>Habilidades e Cursos</h2>
-      <p>Destaque o que você sabe fazer de melhor.</p>
-    </div>
-
-    <!-- CARD HABILIDADES -->
-    <div class="card">
-
-      <label>Principais Habilidades</label>
-
-      <div class="input-box">
-        <input type="text" placeholder="Ex: React, Figma, Liderança (Pressione Enter)">
+      <div class="form-header">
+        <h2>Habilidades e Cursos</h2>
+        <p>Destaque o que você sabe fazer de melhor.</p>
       </div>
 
-      <div class="tags">
-        <span class="tag">
-          React
-          <i data-lucide="x"></i>
-        </span>
+      <!-- CARD HABILIDADES -->
+      <div class="form-card" style="margin-bottom: 34px;">
+        <div class="input-group">
+          <label>Principais Habilidades</label>
+          <div class="input-field">
+            <i class="fa-solid fa-code"></i>
+            <input type="text" placeholder="Ex: React, Figma, Liderança (Pressione Enter)">
+          </div>
+        </div>
 
-        <span class="tag">
-          TypeScript
-          <i data-lucide="x"></i>
-        </span>
+        <!-- Área de Tags das Habilidades adicionadas -->
+        <div class="tags-container" style="display: flex; gap: 12px; flex-wrap: wrap; margin-top: 16px;">
+          <span class="tag-item" style="display: inline-flex; align-items: center; gap: 8px; background: #e9edf4; padding: 8px 16px; border-radius: 12px; font-size: 18px; font-weight: 600; color: #4a5568;">
+            React
+            <i class="fa-solid fa-xmark" style="cursor: pointer; font-size: 14px;"></i>
+          </span>
+          <span class="tag-item" style="display: inline-flex; align-items: center; gap: 8px; background: #e9edf4; padding: 8px 16px; border-radius: 12px; font-size: 18px; font-weight: 600; color: #4a5568;">
+            TypeScript
+            <i class="fa-solid fa-xmark" style="cursor: pointer; font-size: 14px;"></i>
+          </span>
+        </div>
       </div>
 
-    </div>
+      <!-- CARD CURSOS -->
+      <div class="form-card">
+        <div class="input-group">
+          <label>Cursos Extracurriculares</label>
+          <div class="input-field">
+            <i class="fa-regular fa-badge-check"></i>
+            <input type="text" placeholder="Ex: Curso Completo de Web Design">
+          </div>
+        </div>
 
-    <!-- CARD CURSOS -->
-    <div class="card">
+        <div class="input-group">
+          <label>Instituição</label>
+          <div class="input-field">
+            <i class="fa-regular fa-building"></i>
+            <input type="text" placeholder="Ex: Udemy">
+          </div>
+        </div>
 
-      <label>Cursos Extracurriculares</label>
-
-      <div class="input-box icon">
-        <i data-lucide="badge-check"></i>
-        <input type="text" placeholder="Ex: Curso Completo de Web Design">
+        <!-- BOTÃO ADICIONAR CERTIFICADO PADRONIZADO -->
+        <button type="button" class="add-btn" style="margin-top: 12px;">
+          <i class="fa-solid fa-plus"></i>
+          <span>Adicionar certificado</span>
+        </button>
       </div>
 
-      <label>Instituição</label>
-
-      <div class="input-box icon">
-        <i data-lucide="building-2"></i>
-        <input type="text" placeholder="Ex: Udemy">
-      </div>
-
-      <button class="add-btn">
-        <i data-lucide="plus"></i>
-        Adicionar certificado
+      <!-- BUTTON FINALIZAR CADASTRO PADRONIZADO -->
+      <button class="continue-btn" style="margin-top: 40px;">
+        <a href="cadastro_conclusao.html">
+          <span>Finalizar Cadastro</span>
+          <i class="fa-solid fa-check"></i>
+        </a>
       </button>
 
-    </div>
+    </main>
 
-    <!-- BOTÃO -->
-    <button class="finish-btn"> <a href="cadastro_conclusao.html">
-      Finalizar Cadastro</a>
-    </button>
-
-  </main>
-
-  <script>
-    lucide.createIcons();
-  </script>
+  </div>
 
 </body>
 </html>
