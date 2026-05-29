@@ -25,7 +25,7 @@
       <div class="sidebar-header">
         <a href="candidato_pesquisa.php" class="btn-clear-filters">Limpar</a>
       </div>
-      
+
       <form class="filters-form">
         <!-- FILTRO: CIDADE -->
         <div class="filter-group">
@@ -100,7 +100,7 @@
       </a>
       
       <!-- CARD 1 -->
-      <a href="candidatura_process.php" style="text-decoration: none; color: inherit;">
+      <a href="detalhes_vaga.php" style="text-decoration: none; color: inherit;">
         <article class="vaga-card">
           <div class="vaga-logo-box">
             <img src="../multimidia/logo_empresas/TechCorp.png" alt="Logotipo da Empresa" class="vaga-logo-img">
@@ -118,7 +118,8 @@
       </a>
 
       <!-- CARD 2 (Selecionado / Ativo conforme a imagem) -->
-      <article class="vaga-card active">
+       <a href="detalhes_vaga.php" style="text-decoration: none; color: inherit;">
+      <article class="vaga-card">
         <div class="vaga-logo-box">
           <img src="../multimidia/logo_empresas/Nexora.png" alt="Logotipo da Empresa" class="vaga-logo-img">
         </div>
@@ -134,6 +135,7 @@
       </article>
 
       <!-- CARD 3 -->
+      <a href="detalhes_vaga.php" style="text-decoration: none; color: inherit;">
       <article class="vaga-card">
         <div class="vaga-logo-box">
           <img src="../multimidia/logo_empresas/Pixelon.png" alt="Logotipo da Empresa" class="vaga-logo-img">

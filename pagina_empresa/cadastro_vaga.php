@@ -84,7 +84,7 @@
 
             <!-- BOTÃO DE ENVIO PRINCIPAL -->
             <div class="form-actions">
-                <button type="submit" class="submit-form-btn"> <a href="publi_vaga_concluido.php"></a>
+                <button type="submit" class="submit-form-btn"> <a href="publi_vaga_concluido.html"></a>
                     Publicar Vaga
                 </button>
             </div>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Confirmar Inscrição</title>
+
+    <link rel="stylesheet" href="styles/confirmacao_inscr.css" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+    <nav>
+        <?php
+            include_once "../includes/nav_candidato.php";
+        ?>
+    </nav>
+
+    <main class="container">
+
+        <!-- TÍTULO -->
+        <h1 class="page-title">Confirmar Inscrição</h1>
+
+        <!-- RESUMO DA VAGA -->
+        <section class="section">
+
+            <h2>Resumo da Vaga</h2>
+
+            <div class="job-card">
+
+                <div class="company-icon">
+                    <i class="fa-regular fa-building"></i>
+                </div>
+
+                <div class="job-info">
+
+                    <h3>Desenvolvedor(a) Front-end Senior</h3>
+
+                    <a href="#">TechCorp Solutions</a>
+
+                    <div class="tags">
+
+                        <span>
+                            <i class="fa-solid fa-location-dot"></i>
+                            São Paulo, SP
+                        </span>
+
+                        <span>
+                            <i class="fa-solid fa-briefcase"></i>
+                            Híbrido
+                        </span>
+
+                        <span>CLT</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- PERFIL -->
+        <section class="section">
+
+            <h2>Perfil e Currículo</h2>
+
+            <div class="profile-card">
+
+                <p>
+                    O seu perfil do GoraGO será enviado para o recrutador,
+                    juntamente com o currículo abaixo.
+                </p>
+
+                <div class="resume-box">
+
+                    <div class="resume-left">
+
+                        <div class="resume-icon">
+                            <i class="fa-regular fa-file-lines"></i>
+                        </div>
+
+                        <div>
+                            <h3>Currículo Principal</h3>
+                            <span>Atualizado há 2 dias</span>
+                        </div>
+
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right arrow"></i>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- BOTÕES -->
+        <div class="actions">
+
+            <a href="detalhes_vaga.php">
+                <button class="cancel-btn">
+                    Cancelar
+                </button>
+            </a>
+
+            <div class="divider"></div>
+
+            <a href="inscricao_confirmada.php">
+                <button class="confirm-btn">
+                    Sim, confirmar inscrição
+                </button>
+            </a>
+
+        </div>
+
+    </main>
+
+</body>
+
+</html>

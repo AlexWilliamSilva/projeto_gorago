@@ -1,0 +1,375 @@
+/* ==========================================================================
+   1. GLOBAIS E RESET DE PROPRIEDADES
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  background-color: #eef0f6; /* Tom cinza azulado sutil do fundo */
+  color: #202226;
+  overflow-x: hidden;
+  padding-bottom: 120px; /* Evita que o conteúdo cole embaixo do rodapé fixo */
+}
+
+/* ==========================================================================
+   2. NAVBAR FLUTUANTE SUPERIOR
+   ========================================================================== */
+.vaga-nav {
+  width: 100%;
+  height: 80px;
+  background: #ffffff;
+  border-bottom: 2px solid #dfe4ec;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-back, .nav-share {
+  background: transparent;
+  border: none;
+  font-size: 22px;
+  color: #202226;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.vaga-nav h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #202226;
+}
+
+/* ==========================================================================
+   3. CONTAINER DE ESQUEMA DE ZOOM 75%
+   ========================================================================== */
+.page-scale {
+  transform: scale(0.75);
+  transform-origin: top left;
+  width: 133.33%;
+  display: flex;
+  justify-content: center; /* Centraliza todo o conteúdo no meio da tela */
+}
+
+.vaga-container {
+  width: 100%;
+  max-width: 1200px; /* Força os blocos a não esticarem até o fim da tela */
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ==========================================================================
+   4. BLOCO SUPERIOR (HEADER VAGA + MATCH CARD)
+   ========================================================================== */
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 24px;
+  width: 100%;
+}
+
+.job-left {
+  flex: 2;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #dfe4ec;
+  padding: 32px;
+  display: flex;
+  gap: 24px;
+}
+
+.company-icon {
+  width: 74px;
+  height: 74px;
+  border-radius: 12px;
+  background: #f0f4fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.company-logo {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  border-radius: 12px;
+}
+
+.job-info h1 {
+  font-size: 24px;
+  font-weight: 800;
+  color: #202226;
+  margin-bottom: 6px;
+}
+
+.company-name {
+  text-decoration: none;
+  color: #0045c4;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.job-tags {
+  display: flex;
+  gap: 12px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.job-tags span {
+  background: #f1f5f9;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: none; /* Remove bordas conflitantes anteriores */
+}
+
+/* CARD DE COMPATIBILIDADE (MATCH) */
+.match-card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #dfe4ec;
+  padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.match-text-area h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #202226;
+  margin-bottom: 8px;
+}
+
+.match-text-area p {
+  color: #71809a;
+  font-size: 14px;
+  line-height: 1.5;
+  max-width: 200px;
+}
+
+.match-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 6px solid #10b981; /* Verde esmeralda exato do Match */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-shrink: 0;
+  line-height: 1.1;
+}
+
+.match-circle span {
+  font-size: 16px;
+  font-weight: 800;
+  color: #202226;
+}
+
+.match-circle small {
+  font-size: 11px;
+  font-weight: 500;
+  color: #71809a;
+}
+
+/* ==========================================================================
+   5. CARDS DE CONTEÚDO BRANCOS
+   ========================================================================== */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #dfe4ec;
+  padding: 32px;
+  width: 100%;
+}
+
+.card h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #202226;
+  margin-bottom: 16px;
+}
+
+.card p {
+  color: #4a5568;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.full-width {
+  width: 100%;
+}
+
+/* GRID DE DUAS COLUNAS */
+.job-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  width: 100%;
+}
+
+/* ==========================================================================
+   6. CONTROLE E ALINHAMENTO DE LISTAS
+   ========================================================================== */
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+ul li {
+  font-size: 15px;
+  color: #4a5568;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Lista da esquerda: Ícones de verificação */
+.check-list li {
+  gap: 12px;
+}
+
+.check-list li i {
+  color: #0045c4;
+  font-size: 18px;
+  margin-top: 2px;
+}
+
+/* Lista da direita: Bolinhas tradicionais limpas */
+.dot-list li {
+  position: relative;
+  padding-left: 16px;
+}
+
+.dot-list li::before {
+  content: "•";
+  color: #0045c4;
+  font-size: 20px;
+  position: absolute;
+  left: 0;
+  top: -4px;
+}
+
+/* ==========================================================================
+   7. RODAPÉ FIXO DE AÇÃO (FIXADO NA BASE DA TELA INTEIRA)
+   ========================================================================== */
+.action-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: #ffffff;
+  border-top: 2px solid #dfe4ec;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.actions-wrapper {
+  width: 100%;
+  max-width: 1200px; /* Segue alinhado perfeitamente com o container de cima */
+  padding: 0 40px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.save-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  border: 2px solid #dfe4ec;
+  background: white;
+  cursor: pointer;
+  font-size: 20px;
+  color: #71809a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.save-btn:hover {
+  border-color: #0045c4;
+  color: #0045c4;
+}
+
+.apply-btn {
+  flex: 1;
+  max-width: 400px;
+  height: 56px;
+  background: #0045c4;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.apply-btn:hover {
+  background: #002bb0;
+}
+
+.apply-link {
+  flex: 1;
+  max-width: 400px;
+  height: 56px;
+
+  background: #0045c4;
+  color: white;
+
+  border-radius: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 700;
+
+  transition: background 0.2s ease;
+}
+
+.apply-link:hover {
+  background: #002bb0;
+}
+
+.save-btn.saved {
+  background: #0045c4;
+  border-color: #0045c4;
+  color: white;
+}
+
+.save-btn.saved:hover {
+  background: #0035a0;
+}
