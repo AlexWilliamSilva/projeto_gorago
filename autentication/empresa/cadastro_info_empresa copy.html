@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Criar Conta - Dados Pessoais</title>
+
+  <link rel="stylesheet" href="../styles/cadastro_info_user.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- BOTÃO VOLTAR CORRIGIDO: Fora da escala com imagem de seta e animação -->
+  <a href="login_candidato.html" class="btn-voltar">
+    <img src="../imagens/icons_nav/voltar.svg" alt="Voltar para a etapa anterior">
+  </a>
+
+  <div class="page-scale">
+
+    <!-- HEADER -->
+    <header class="topbar">
+      <div class="back-area">
+        <h1>Criar Conta</h1>
+      </div>
+    </header>
+
+    <!-- PROGRESS -->
+    <section class="progress-section">
+      <div class="progress-top">
+        <span class="step-text">Etapa 1 de 2</span>
+        <span class="percent">50%</span>
+      </div>
+      <div class="progress-bar">
+        <div class="progress-fill"></div>
+      </div>
+    </section>
+
+    <!-- FORM -->
+    <main class="content">
+
+      <div class="form-header">
+        <h2>Dados Pessoais</h2>
+        <p>Como os candidatos vão te conhecer.</p>
+      </div>
+
+      <div class="form-card">
+
+        <!-- NOME -->
+        <div class="input-group">
+          <label>Nome Completo</label>
+          <div class="input-field">
+            <i class="fa-regular fa-user"></i>
+            <input type="text" placeholder="Ex: TechCorp">
+          </div>
+        </div>
+
+        <!-- EMAIL -->
+        <div class="input-group">
+          <label>E-mail</label>
+          <div class="input-field">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="email" placeholder="techcorp@email.com">
+          </div>
+        </div>
+
+        <!-- CELULAR -->
+        <div class="input-group">
+          <label>Contato (telefone)</label>
+          <div class="input-field">
+            <i class="fa-solid fa-phone"></i>
+            <input type="text" placeholder="(00) 00000-0000">
+          </div>
+        </div>
+
+        <!-- CIDADE -->
+        <div class="input-group">
+          <label>Cidade / Estado</label>
+          <div class="input-field">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" placeholder="Ex: São Paulo, SP">
+          </div>
+        </div>
+
+        <!-- SENHA -->
+        <div class="input-group">
+          <label>Crie uma Senha</label>
+          <div class="input-field">
+            <i class="fa-solid fa-lock"></i>
+            <input type="password" placeholder="Mínimo 8 caracteres">
+          </div>
+        </div>
+
+      </div>
+
+      <!-- BUTTON CONTINUAR -->
+      <button class="continue-btn">
+        <a href="cadastro_info_empresa2.html">
+          <span>Continuar</span>
+          <i class="fa-solid fa-angle-right"></i>
+        </a>
+      </button>
+
+    </main>
+
+  </div>
+
+</body>
+</html>

@@ -78,9 +78,7 @@
                     <input type="text" placeholder="Cidade, estado ou remoto">
                 </div>
 
-                <button class="btn-search">
-                    Buscar
-                </button>
+                <button class="btn-search"><a href="autentication/candidato/login_candidato.html">Buscara</a></button>
 
             </div>
 
@@ -208,7 +206,7 @@
         </div>
 
         <div class="center-button">
-            <button>Publicar Vaga</button>
+            <button><a href="autentication/empresa/login_empresa.html">Publicar Vaga</a></button>
         </div>
 
     </section>
@@ -334,7 +332,7 @@
                 </p>
 
                 <button class="btn-white">
-                    Publicar Vaga
+                    <a href="autentication/empresa/login_empresa.html">Publicar Vaga</a>
                 </button>
 
                 <button class="btn-outline">

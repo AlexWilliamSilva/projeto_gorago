@@ -191,12 +191,12 @@ body {
 .continue-btn {
   margin-top: 40px; /* Travado em 40px para aproximar do formulário */
   width: 450px;
-  height: 62px;
+  height: 82px;
   border: none;
   border-radius: 20px;
   background: #1140d4;
   color: #ffffff;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: 700;
   display: flex;
   align-items: center;
@@ -208,14 +208,14 @@ body {
 }  
     
 .continue-btn i {
-  font-size: 18px;
+  font-size: 20px;
   transition: transform 0.2s ease-in-out;
 }
 
 .continue-btn:hover {
   background: #002bb0;
   transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(17,64,212,0.35);
+  box-shadow: 0 6px 16px rgba(17,64,212,0.35);    
 }
 
 .continue-btn:hover i {

@@ -9,56 +9,6 @@ body{
     background-color: #f3f4fa;
 }
 
-/* HEADER */
-
-header{
-    width: 100%;
-    height: 90px;
-
-    background-color: white;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    padding: 0 50px;
-
-    border-bottom: 1px solid #d9d9d9;
-}
-
-.logo img {
-    width: 73px;
-}
-
-.search-box{
-    width: 500px;
-    height: 45px;
-
-    display: flex;
-    align-items: center;
-    gap: 15px;
-}
-
-.search-box i{
-    font-size: 22px;
-}
-
-.search-box input{
-    width: 100%;
-    height: 100%;
-
-    border-radius: 10px;
-    border: 1px solid #cfcfcf;
-
-    padding-left: 20px;
-
-    outline: none;
-}
-
-.menu i{
-    font-size: 32px;
-    cursor: pointer;
-}
 
 /* MAIN */
 

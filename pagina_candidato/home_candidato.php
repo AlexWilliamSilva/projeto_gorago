@@ -5,25 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - GoraGO</title>
 
-    <link rel="stylesheet" href="../styles_candidato/home_candidato.css">
+    <link rel="stylesheet" href="styles/home_candidato.css">
 </head>
 <body>
 
-    <!-- HEADER -->
-    <header>
-        <div class="logo">
-            <img src="../multimidia/logo_empresas/logonav.png" alt="GoraGO">
-        </div>
-
-        <div class="search-box">
-            <i class="fa-solid fa-magnifying-glass"></i>
-            <input type="text" placeholder="Busque por palavras chaves ou cargos">
-        </div>
-
-        <div class="menu">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-    </header>
+    <nav>
+        <?php
+            include_once "../includes/nav_candidato.php";
+        ?>
+    </nav>
 
     <!-- MAIN -->
     <main>
@@ -33,14 +23,14 @@
 
             <div class="profile-left">
 
-                <img src="https://i.pravatar.cc/150?img=12" alt="">
+                <img src="../multimidia/avatar_candidato.png" alt="Alex Silva">
 
                 <div class="profile-info">
                     <h2>Alex Silva</h2>
                     <h3>DSM • Front-End Developer</h3>
                     <p>Itapira, SP</p>
 
-                    <a href="#">Ver Mais</a>
+                    <a href="candidato_perfil.php">Ver Mais</a>
                 </div>
 
             </div>

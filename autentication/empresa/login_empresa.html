@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Login - GoraGO</title>
+  <title>Login Empresa - GoraGO</title>
 
   <link rel="stylesheet" href="../styles/login.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,6 +43,9 @@
       <!-- FORM -->
       <section class="right-side">
 
+        <!-- NOVO: Título da Página adicionado no topo do formulário -->
+        <h1 class="page-title">Login Empresa</h1>
+
         <form class="login-form">
 
           <!-- EMAIL -->
@@ -79,9 +82,9 @@
             <a href="#">Esqueceu a senha?</a>
           </div>
 
-          <!-- BOTÃO -->
-          <button class="login-btn"><a href="../pagina_empresa/home_empresa.html">
-              Entrar</a>
+          <!-- BOTÃO CORRIGIDO: Tag 'a' agora preenche o botão por completo -->
+          <button type="button" class="login-btn">
+            <a href="../../pagina_empresa/home_empresa.html">Entrar</a>
           </button>
 
           <!-- DIVIDER -->
@@ -96,8 +99,8 @@
           </div>
 
           <!-- CREATE ACCOUNT -->
-          <button class="create-account-btn"> <a href="cadastro.html">
-              Criar nova conta</a>
+          <button type="button" class="create-account-btn"> 
+            <a href="cadastro.html">Criar nova conta</a>
           </button>
 
         </form>

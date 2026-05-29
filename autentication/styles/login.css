@@ -303,8 +303,8 @@ a {
 }
 
 .btn-voltar img {
-  width: 24px;   /* Tamanho do SVG dentro do botão */
-  height: 24px;
+  width: 44px;   /* Tamanho do SVG dentro do botão */
+  height: 44px;
   display: block;
 }
 
@@ -316,4 +316,13 @@ a {
 
 .btn-voltar:active {
   transform: translateX(-1px);
+}
+
+.page-title {
+  font-size: 44px;
+  font-weight: 800;
+  color: #202226;
+  margin-bottom: 38px;
+  text-align: left;
+  letter-spacing: -1px;
 }

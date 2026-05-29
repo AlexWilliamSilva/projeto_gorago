@@ -317,6 +317,19 @@ small {
     color: white;
     font-size: 16px;
     font-weight: 700;
+    transition: background 0.2s ease-in-out, 
+                transform 0.2s ease-in-out, 
+                box-shadow 0.2s ease-in-out;
+}
+
+.btn-search a {
+  color: #fff;  
+}
+
+.btn-search:hover {
+    background: #002bb0; /* Tom de azul ligeiramente mais escuro (ajuste se necessário) */
+    transform: translateY(-2px); /* Eleva o botão suavemente */
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15); /* Aumenta a profundidade da sombra */
 }
 
 /* =========================
@@ -480,6 +493,10 @@ small {
     display:flex;
     justify-content:center;
     margin-top:70px;
+}
+
+.center-button a{
+    color: #fff;
 }
 
 .center-button button{
@@ -667,17 +684,16 @@ small {
     transform:translateY(1px);
 }
 
-
+.btn-white a{
+    color: #000;
+}
 
 .btn-outline{
     width:100%;
     height:52px;
-
     font-size:15px;
-
     border-radius:8px;
     border:1px solid white;
-
     background:transparent;
     color:white;
     font-weight:700;

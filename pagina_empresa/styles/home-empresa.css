@@ -63,7 +63,7 @@ body{
 .hero-content h1{
     color: white;
 
-    font-size: 2.9rem;
+    font-size: 46px;
     font-weight: 800;
 
     margin-bottom: 10px;
@@ -72,7 +72,7 @@ body{
 .hero-content p{
     color: white;
 
-    font-size: 1.8rem;
+    font-size: 29px;
     font-weight: 400;
 }
 
@@ -108,7 +108,7 @@ body{
 .number{
     display: block;
 
-    font-size: 3.3rem;
+    font-size: 53px;
     font-weight: 800;
 
     color: #111;
@@ -119,9 +119,8 @@ body{
 }
 
 .label{
-    font-size: 1.9rem;
+    font-size: 29px;
     font-weight: 500;
-
     color: #5c6985;
 }
 
@@ -143,7 +142,7 @@ body{
 
     color: #0b45d8;
 
-    font-size: 1.5rem;
+    font-size: 24px;
     font-weight: 700;
 
     cursor: pointer;
@@ -176,7 +175,7 @@ body{
 }
 
 .jobs-header h2{
-    font-size: 3rem;
+    font-size: 48px;
     font-weight: 800;
 
     color: #1f1f1f;
@@ -185,7 +184,7 @@ body{
 .jobs-header a{
     text-decoration: none;
 
-    font-size: 1.4rem;
+    font-size: 24px;
     font-weight: 700;
 
     color: #0b45d8;
@@ -216,7 +215,7 @@ body{
 }
 
 .job-top h3{
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: 700;
 
     color: #1f1f1f;
@@ -237,7 +236,7 @@ body{
 
     border-radius: 999px;
 
-    font-size: 1rem;
+    font-size: 16px;
     font-weight: 600;
 }
 
@@ -254,7 +253,7 @@ body{
 /* ARROW */
 
 .arrow{
-    font-size: 3rem;
+    font-size: 48px;
     color: #5e6980;
 
     line-height: 1;
@@ -277,7 +276,7 @@ body{
     display: flex;
     align-items: center;
 
-    font-size: 1.3rem;
+    font-size: 21px;
 }
 
 .people{
@@ -326,7 +325,7 @@ body{
 
 .footer-logo p{
     color: #c5c5c5;
-    font-size: 1rem;
+    font-size: 16px;
 }
 
 /* LINKS */
@@ -344,7 +343,7 @@ body{
 .footer-column h4{
     color: white;
 
-    font-size: 1.3rem;
+    font-size: 20px;
     font-weight: 700;
 
     margin-bottom: 18px;
@@ -355,7 +354,7 @@ body{
 
     text-decoration: none;
 
-    font-size: 1.15rem;
+    font-size: 18px;
 
     margin-bottom: 10px;
 }
