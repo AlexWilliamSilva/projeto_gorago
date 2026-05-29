@@ -1,0 +1,270 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter', sans-serif;
+  background:#F4F6FC;
+  color:#1E1E1E;
+}
+
+/* SCALE 75% */
+.page-scale {
+  transform: scale(0.75);
+  transform-origin: top left;
+
+  width: 133.33%;
+  min-height: 133.33vh;
+}
+/* HEADER */
+.topbar {
+  width: 100%;
+  height: 88px;
+
+  background: #ffffff;
+
+  border-bottom: 2px solid #e4e8ef;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 24px;
+}
+
+.back-area {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.back-icon {
+  font-size: 34px;
+  color: #1d1f23;
+
+  cursor: pointer;
+}
+
+.back-area h1 {
+  font-size: 26px;
+  font-weight: 700;
+
+  color: #202226;
+}
+
+/* PROGRESSO */
+
+.progress-section{
+  width:100%;
+  background:#FFF;
+
+  padding:18px 24px 16px;
+}
+
+.progress-info{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  margin-bottom:12px;
+
+  font-size:18px;
+  font-weight:600;
+  color:#6B7280;
+}
+
+.progress-info span:last-child{
+  color:#1541D1;
+}
+
+.progress-bar{
+  width:100%;
+  height:6px;
+  background:#E8EDF8;
+  border-radius:20px;
+  overflow:hidden;
+}
+
+.progress-fill{
+  width:100%;
+  height:100%;
+  background:#1541D1;
+  border-radius:20px;
+}
+
+/* CONTAINER */
+
+.container{
+  width:100%;
+  max-width:540px;
+
+  margin:40px auto 80px;
+}
+
+/* TITULO */
+
+.title-area{
+  text-align:center;
+  margin-bottom:28px;
+}
+
+.title-area h2{
+  font-size:38px;
+  font-weight:700;
+  margin-bottom:8px;
+}
+
+.title-area p{
+  font-size:18px;
+  color:#7A869A;
+}
+
+/* CARD */
+
+.card{
+  background:#FFF;
+  border:1px solid #E3E8F2;
+  border-radius:22px;
+
+  padding:24px;
+  margin-bottom:24px;
+
+  box-shadow:0 4px 12px rgba(0,0,0,0.04);
+}
+
+.card label{
+  display:block;
+  margin-bottom:10px;
+
+  font-size:15px;
+  font-weight:600;
+}
+
+/* INPUT */
+
+.input-box{
+  width:100%;
+  height:58px;
+
+  border:1.5px solid #DCE3EE;
+  border-radius:16px;
+
+  display:flex;
+  align-items:center;
+
+  padding:0 18px;
+
+  margin-bottom:18px;
+
+  background:#FFF;
+}
+
+.input-box input{
+  width:100%;
+  border:none;
+  outline:none;
+
+  font-size:16px;
+  font-family:'Inter', sans-serif;
+  color:#1E1E1E;
+}
+
+.input-box input::placeholder{
+  color:#8A94A6;
+}
+
+.input-box.icon{
+  gap:12px;
+}
+
+.input-box.icon i{
+  width:20px;
+  height:20px;
+  color:#7B8794;
+}
+
+/* TAGS */
+
+.tags{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+}
+
+.tag{
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  padding:10px 14px;
+
+  border-radius:999px;
+
+  background:#EEF3FF;
+  border:1px solid #C9D8FF;
+
+  color:#1541D1;
+  font-size:15px;
+  font-weight:600;
+}
+
+.tag i{
+  width:16px;
+  height:16px;
+  cursor:pointer;
+}
+
+/* BOTÃO ADICIONAR */
+
+.add-btn{
+  margin-top:4px;
+
+  background:none;
+  border:none;
+
+  display:flex;
+  align-items:center;
+  gap:8px;
+
+  color:#1541D1;
+  font-size:16px;
+  font-weight:600;
+
+  cursor:pointer;
+}
+
+.add-btn i{
+  width:18px;
+  height:18px;
+}
+
+/* BOTÃO FINAL */
+
+.finish-btn{
+  width:100%;
+  height:62px;
+
+  border:none;
+  border-radius:18px;
+
+  background:#1DBA7A;
+  color:#FFF;
+
+  font-size:20px;
+  font-weight:700;
+
+  cursor:pointer;
+
+  transition:.2s;
+}
+
+.finish-btn:hover{
+  opacity:.92;
+  transform:translateY(-1px);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

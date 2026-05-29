@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #eef0f6;
+  overflow: hidden;
+  position: relative; /* Mantém o botão preso nos cantos da tela */
+}
+
+/* ZOOM 75% */
+.page-scale {
+  transform: scale(0.75);
+  transform-origin: top left;
+  width: 133.33%;
+  height: 133.33vh;
+}
+
+/* LAYOUT */
+.login-container {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 140px;
+
+  padding: 0 120px;
+}
+
+/* LEFT */
+.left-side {
+  width: 520px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-area {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo-image {
+  width: 650px;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+/* BRAND */
+.brand-name {
+  font-size: 120px;
+  font-weight: 700;
+
+  line-height: 1;
+
+  color: #111111;
+
+  margin-top: -22px;
+}
+
+.brand-name span {
+  color: #1140d4;
+}
+
+.logo-area p {
+  margin-top: 38px;
+
+  font-size: 24px;
+  font-weight: 500;
+
+  color: #66758d;
+}
+
+/* RIGHT */
+.right-side {
+  width: 760px;
+}
+
+.login-form {
+  width: 100%;
+}
+
+/* INPUTS */
+.input-group {
+  margin-bottom: 34px;
+}
+
+.input-group label {
+  display: block;
+
+  font-size: 22px;
+  font-weight: 600;
+
+  color: #222222;
+
+  margin-bottom: 16px;
+}
+
+.input-field {
+  width: 100%;
+  height: 84px;
+
+  background: #ffffff;
+
+  border: 4px solid #dde2ea;
+  border-radius: 22px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 24px;
+
+  box-shadow: 0 2px 4px rgba(0,0,0,0.04);
+  
+  /* ANIMAÇÃO: Suaviza a mudança da borda, sombra e ícone */
+  transition: all 0.25s ease;
+}
+
+.input-field i {
+  font-size: 30px;
+  color: #6f7f97;
+
+  margin-right: 18px;
+  
+  /* ANIMAÇÃO: Transição suave para a nova cor do ícone */
+  transition: color 0.25s ease;
+}
+
+.input-field input {
+  width: 100%;
+
+  border: none;
+  outline: none;
+  background: transparent;
+
+  font-size: 22px;
+  font-weight: 500;
+
+  color: #66758d;
+}
+
+.input-field input::placeholder {
+  color: #66758d;
+}
+
+/* INTERAÇÃO DOS INPUTS: Quando o usuário clica no campo */
+.input-field:focus-within {
+  border-color: #1140d4;
+  box-shadow: 0 0 0 4px rgba(17, 64, 212, 0.15), 0 4px 12px rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+}
+
+/* Troca a cor do ícone do cadeado/envelope quando o campo está ativo */
+.input-field:focus-within i {
+  color: #1140d4;
+}
+
+/* FORGOT */
+.forgot-password {
+  width: 100%;
+
+  display: flex;
+  justify-content: flex-end;
+
+  margin-top: 8px;
+  margin-bottom: 42px;
+}
+
+.forgot-password a {
+  text-decoration: none;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  color: #1140d4;
+  
+  /* ANIMAÇÃO: Suaviza o efeito do mouse */
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.forgot-password a:hover {
+  color: #00228c;
+  text-decoration: underline;
+}
+
+/* LOGIN BUTTON */
+.login-btn {
+  width: 100%;
+  height: 84px;
+
+  border: none;
+  border-radius: 24px;
+
+  background: #1140d4;
+  color: #ffffff;
+
+  font-size: 26px;
+  font-weight: 700;
+
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(17,64,212,0.25);
+  
+  /* ANIMAÇÃO: Transição para os estados hover e active */
+  transition: all 0.2s ease-in-out;
+}
+
+/* Efeito ao passar o mouse no botão Entrar */
+.login-btn:hover {
+  background: #002bb0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(17,64,212,0.35);
+}
+
+/* Efeito físico de clique no botão Entrar */
+.login-btn:active {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(17,64,212,0.2);
+}
+
+/* DIVIDER */
+.divider {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 26px;
+
+  margin: 34px 0;
+}
+
+.line {
+  flex: 1;
+  height: 2px;
+
+  background: #dde2ea;
+}
+
+.divider span {
+  font-size: 22px;
+  font-weight: 600;
+
+  color: #67758d;
+}
+
+/* CREATE ACCOUNT */
+.create-account-btn {
+  width: 100%;
+  height: 84px;
+
+  background: #ffffff;
+
+  border: 4px solid #dde2ea;
+  border-radius: 24px;
+
+  color: #222222;
+
+  font-size: 26px;
+  font-weight: 700;
+
+  cursor: pointer;
+  
+  /* ANIMAÇÃO: Suaviza borda e fundo */
+  transition: all 0.2s ease-in-out;
+}
+
+/* Efeito ao passar o mouse no botão Criar Nova Conta */
+.create-account-btn:hover {
+  background: #f7f9fc;
+  border-color: #1140d4;
+  color: #1140d4;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Efeito físico de clique no botão Criar Nova Conta */
+.create-account-btn:active {
+  transform: translateY(1px);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* BOTÃO VOLTAR */
+.btn-voltar {
+  position: absolute;
+  top: 30px;     /* Distância do topo da janela */
+  left: 40px;    /* Distância da esquerda da janela */
+  z-index: 9999; /* Fica acima do zoom do formulário */
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 54px;   /* Tamanho do círculo */
+  height: 54px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #dde2ea;
+  
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-voltar img {
+  width: 24px;   /* Tamanho do SVG dentro do botão */
+  height: 24px;
+  display: block;
+}
+
+.btn-voltar:hover {
+  transform: translateX(-4px); /* Animação simples de recuo */
+  background: #f7f9fc;
+  border-color: #1140d4;
+}
+
+.btn-voltar:active {
+  transform: translateX(-1px);
+}

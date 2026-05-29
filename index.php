@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="index.css" />
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
+
 <body>
 
     <!-- HEADER -->
@@ -25,11 +27,25 @@
                 <input type="text" placeholder="Busque por palavras-chave ou cargos">
             </div>
 
-            <button class="btn-primary">Entrar</button>
+            <!-- Container do botão + menu flutuante -->
+            <div class="nav-auth-container">
+                <button class="btn-primary" id="btnEntrar">Entrar</button>
+
+                <!-- Menu Popup (Dropdown) -->
+                <div class="login-dropdown" id="dropdownLogin">
+                    <a href="autentication/candidato/login_candidato.html" class="dropdown-item">
+                        <span>Candidato</span>
+                        <i data-lucide="user"></i>
+                    </a>
+                    <a href="autentication/empresa/login_empresa.html" class="dropdown-item">
+                        <span>Empresa</span>
+                        <i data-lucide="building"></i>
+                    </a>
+                </div>
+            </div>
 
         </div>
     </header>
-
     <!-- HERO -->
     <section class="hero">
 
@@ -124,183 +140,183 @@
     <!-- EMPRESAS -->
     <section class="companies">
 
-    <div class="section-title">
+        <div class="section-title">
 
-        <h2>Para Empresas</h2>
+            <h2>Para Empresas</h2>
 
-        <p>
-            Conecte-se com estudantes universitários prontos para a
-            primeira oportunidade
-        </p>
+            <p>
+                Conecte-se com estudantes universitários prontos para a
+                primeira oportunidade
+            </p>
 
-    </div>
+        </div>
 
-    <div class="companies-content">
+        <div class="companies-content">
 
-        <div>
+            <div>
 
-            <div class="companies-text">
+                <div class="companies-text">
 
-                <h3>
-                    Encontre estagiários e trainees com agilidade
-                </h3>
+                    <h3>
+                        Encontre estagiários e trainees com agilidade
+                    </h3>
 
-                <p>
-                    Publique suas vagas e alcance estudantes universitários motivados.
-                    Processo simples, resultados rápidos.
-                </p>
+                    <p>
+                        Publique suas vagas e alcance estudantes universitários motivados.
+                        Processo simples, resultados rápidos.
+                    </p>
+
+                </div>
+
+                <div class="companies-list">
+
+                    <div class="list-item">
+                        <img src="multimidia/icons_nav/IconeCheck.svg" alt="">
+
+                        <p>
+                            Plataforma focada em estudantes buscando a
+                            primeira experiência profissional
+                        </p>
+                    </div>
+
+                    <div class="list-item">
+                        <img src="multimidia/icons_nav/IconeCheck.svg" alt="">
+
+                        <p>
+                            Interface clara que facilita a triagem de candidatos
+                            qualificados
+                        </p>
+                    </div>
+
+                    <div class="list-item">
+                        <img src="multimidia/icons_nav/IconeCheck.svg" alt="">
+
+                        <p>
+                            Candidaturas rápidas atraem mais estudantes
+                            engajados
+                        </p>
+                    </div>
+
+                </div>
 
             </div>
 
-            <div class="companies-list">
-
-                <div class="list-item">
-                    <img src="multimidia/icons_nav/IconeCheck.svg" alt="">
-
-                    <p>
-                        Plataforma focada em estudantes buscando a
-                        primeira experiência profissional
-                    </p>
-                </div>
-
-                <div class="list-item">
-                    <img src="multimidia/icons_nav/IconeCheck.svg" alt="">
-
-                    <p>
-                        Interface clara que facilita a triagem de candidatos
-                        qualificados
-                    </p>
-                </div>
-
-                <div class="list-item">
-                    <img src="multimidia/icons_nav/IconeCheck.svg" alt="">
-
-                    <p>
-                        Candidaturas rápidas atraem mais estudantes
-                        engajados
-                    </p>
-                </div>
-
+            <div class="companies-image">
+                <img src="multimidia/logo_empresas/PessoasEscritorio.jpg" alt="">
             </div>
 
         </div>
 
-        <div class="companies-image">
-            <img src="multimidia/logo_empresas/PessoasEscritorio.jpg" alt="">
+        <div class="center-button">
+            <button>Publicar Vaga</button>
         </div>
 
-    </div>
-
-    <div class="center-button">
-        <button>Publicar Vaga</button>
-    </div>
-
-</section>
+    </section>
 
     <!-- STATS -->
-   <section class="stats">
+    <section class="stats">
 
-    <div class="container stats-content">
+        <div class="container stats-content">
 
-        <!-- IMAGEM -->
-        <div class="companies-image">
-            <img src="multimidia/logo_empresas/Profissionais.png "alt="">
+            <!-- IMAGEM -->
+            <div class="companies-image">
+                <img src="multimidia/logo_empresas/Profissionais.png " alt="">
+            </div>
+
+            <!-- TEXO -->
+            <div class="stats-info">
+
+                <div class="companies-text">
+
+                    <h3>
+                        Encontre estagiários e trainees com agilidade
+                    </h3>
+
+                    <p>
+                        Publique suas vagas e alcance estudantes universitários motivados.
+                        Processo simples, resultados rápidos.
+                    </p>
+
+                </div>
+
+                <!-- LISTA -->
+                <div class="companies-list">
+
+                    <div class="list-item">
+
+                        <img src="multimidia/icons_nav/IconeCheck.svg" alt="">
+
+                        <p>
+                            Perfil personalizado com a identidade da sua empresa
+                        </p>
+
+                    </div>
+
+                    <div class="list-item">
+
+                        <img src="multimidia/icons_nav/IconeCheck.svg" alt="">
+
+                        <p>
+                            Destaque benefícios, cultura e oportunidades de crescimento
+                        </p>
+
+                    </div>
+
+                    <div class="list-item">
+
+                        <img src="multimidia/icons_nav/IconeCheck.svg" alt="">
+
+                        <p>
+                            Conexão direta com estudantes do seu perfil ideal
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <!-- TEXO -->
-        <div class="stats-info">
+        <!-- ESTATÍSTICAS -->
+        <div class="container stats-grid">
 
-            <div class="companies-text">
+            <div class="stat-card">
 
-                <h3>
-                    Encontre estagiários e trainees com agilidade
-                </h3>
+                <h3>92%</h3>
 
                 <p>
-                    Publique suas vagas e alcance estudantes universitários motivados.
-                    Processo simples, resultados rápidos.
+                    Empresas recebem <br>
+                    candidaturas em 48h
                 </p>
 
             </div>
 
-            <!-- LISTA -->
-            <div class="companies-list">
+            <div class="stat-card">
 
-                <div class="list-item">
+                <h3>3x</h3>
 
-                    <img src="multimidia/icons_nav/IconeCheck.svg" alt="">
+                <p>
+                    Mais candidaturas que <br>
+                    plataformas tradicionais
+                </p>
 
-                    <p>
-                        Perfil personalizado com a identidade da sua empresa
-                    </p>
+            </div>
 
-                </div>
+            <div class="stat-card">
 
-                <div class="list-item">
+                <h3>+2.500</h3>
 
-                    <img src="multimidia/icons_nav/IconeCheck.svg" alt="">
-
-                    <p>
-                        Destaque benefícios, cultura e oportunidades de crescimento
-                    </p>
-
-                </div>
-
-                <div class="list-item">
-
-                    <img src="multimidia/icons_nav/IconeCheck.svg" alt="">
-
-                    <p>
-                        Conexão direta com estudantes do seu perfil ideal
-                    </p>
-
-                </div>
+                <p>
+                    Empresas já contrataram pelo <br>
+                    GoraGO
+                </p>
 
             </div>
 
         </div>
 
-    </div>
-
-    <!-- ESTATÍSTICAS -->
-    <div class="container stats-grid">
-
-        <div class="stat-card">
-
-            <h3>92%</h3>
-
-            <p>
-                Empresas recebem <br>
-                candidaturas em 48h
-            </p>
-
-        </div>
-
-        <div class="stat-card">
-
-            <h3>3x</h3>
-
-            <p>
-                Mais candidaturas que <br>
-                plataformas tradicionais
-            </p>
-
-        </div>
-
-        <div class="stat-card">
-
-            <h3>+2.500</h3>
-
-            <p>
-                Empresas já contrataram pelo <br>
-                GoraGO
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
+    </section>
 
     <!-- CTA -->
     <section class="cta">
@@ -343,4 +359,5 @@
     </script>
 
 </body>
+
 </html>

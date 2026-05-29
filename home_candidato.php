@@ -94,7 +94,7 @@
 
                         <div class="job-date">
                             <i class="fa-regular fa-calendar"></i>
-                            Até 30/09/2025
+                            Até 30/09/2026
                         </div>
                     </div>
 
@@ -115,7 +115,7 @@
 
                         <div class="job-date">
                             <i class="fa-regular fa-calendar"></i>
-                            Até 15/12/2024
+                            Até 15/12/2026
                         </div>
                     </div>
 
