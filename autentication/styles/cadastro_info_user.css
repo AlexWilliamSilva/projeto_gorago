@@ -95,6 +95,8 @@ body {
   flex-direction: column;
   align-items: center;
   padding-top: 46px;
+  transform: scale(0.9);
+
 }
 
 /* HEADER FORM */
@@ -303,37 +305,4 @@ a {
   font-size: 18px;
   font-weight: 500;
   color: #202226;
-}
-
-/* ADD BUTTON */
-.add-btn {
-  margin-top: 28px;
-  width: 440px;
-  height: 80px;
-  border-radius: 20px;
-  border: 2px dashed #d9dee7;
-  background: #ffffff;
-  color: #1140d4;
-  font-size: 20px;
-  font-weight: 700;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-.add-btn i {
-  font-size: 18px;
-}
-
-.add-btn:hover {
-  background: rgba(17, 64, 212, 0.04); 
-  border-color: #1140d4;               
-  transform: translateY(-2px);         
-}
-
-.add-btn:active {
-  transform: translateY(1px);
 }

@@ -21,7 +21,7 @@
 
     <!-- CONTEÚDO PRINCIPAL (FORMULÁRIO) -->
     <main class="form-main-container">
-        <form action="processa_vaga.php" method="POST" class="vacancy-form">
+        <form action="publi_vaga_concluido.html" method="POST" class="vacancy-form">
 
             <!-- CARD 1: INFORMAÇÕES BÁSICAS -->
             <fieldset class="form-card-section">

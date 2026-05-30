@@ -8,6 +8,7 @@ body {
   font-family: 'Inter', sans-serif;
   background: #eef0f6;
   overflow: hidden;
+  padding-top: 100px;
   position: relative; /* Mantém o botão preso nos cantos da tela */
 }
 

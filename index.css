@@ -148,13 +148,10 @@ small {
     height: 44px;
     border: 1px solid var(--neutral-border);
     border-radius: 8px;
-
     display: flex;
     align-items: center;
     gap: 12px;
-
     padding: 0 16px;
-
     background: white;
 }
 
@@ -192,6 +189,24 @@ small {
 /* NOVA REGRA: Mostra o menu quando o usuário passa o mouse pelo container ou pelo botão */
 .nav-auth-container:hover .login-dropdown {
     display: block;
+}
+
+#btnEntrar{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.arrow-down{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+.nav-auth-container:hover .arrow-down{
+    transform: rotate(270deg);
 }
 
 /* Itens do menu */
@@ -311,6 +326,7 @@ small {
 }
 
 .btn-search {
+    width:100%;
     height: 54px;
     border-radius: 10px;
     background: var(--primary-main);
@@ -320,11 +336,13 @@ small {
     transition: background 0.2s ease-in-out, 
                 transform 0.2s ease-in-out, 
                 box-shadow 0.2s ease-in-out;
+    cursor:pointer;
 }
 
 .btn-search a {
-  color: #fff;  
+    color: #fff;  
 }
+
 
 .btn-search:hover {
     background: #002bb0; /* Tom de azul ligeiramente mais escuro (ajuste se necessário) */

@@ -29,7 +29,7 @@
 
             <!-- Container do botão + menu flutuante -->
             <div class="nav-auth-container">
-                <button class="btn-primary" id="btnEntrar">Entrar</button>
+                <button class="btn-primary" id="btnEntrar">Entrar<span class="arrow-down">></span></button>
 
                 <!-- Menu Popup (Dropdown) -->
                 <div class="login-dropdown" id="dropdownLogin">
@@ -78,7 +78,7 @@
                     <input type="text" placeholder="Cidade, estado ou remoto">
                 </div>
 
-                <button class="btn-search"><a href="autentication/candidato/login_candidato.html">Buscar</a></button>
+                <a href="autentication/candidato/login_candidato.html"><button class="btn-search">Buscar</button></a>
 
             </div>
 
@@ -205,10 +205,6 @@
 
         </div>
 
-        <div class="center-button">
-            <button><a href="autentication/empresa/login_empresa.html">Publicar Vaga</a></button>
-        </div>
-
     </section>
 
     <!-- STATS -->
@@ -331,9 +327,9 @@
                     Publique sua primeira vaga gratuitamente e descubra por que empresas escolhem o GoraGO
                 </p>
 
-                <button class="btn-white">
-                    <a href="autentication/empresa/login_empresa.html">Publicar Vaga</a>
-                </button>
+                 <a href="autentication/empresa/login_empresa.html"><button class="btn-white">
+                   Publicar Vaga
+                </button></a>
 
                 <button class="btn-outline">
                     Agendar Demo

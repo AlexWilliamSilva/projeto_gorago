@@ -17,144 +17,144 @@
 
 <body>
 
-  <nav>
-    <?php
-      include_once "../includes/nav_empresa.php";
-     ?>
-  <nav>
+    <nav>
+      <?php
+        include_once "../includes/nav_empresa.php";
+      ?>
+    </nav>
 
-  <!-- HERO -->
-  <section class="hero">
+    <!-- HERO -->
+    <section class="hero">
 
-    <div class="hero-content">
+      <div class="hero-content">
 
-      <h1>Olá, TechCorp!</h1>
+        <h1>Olá, TechCorp!</h1>
 
-      <p>Acompanhe seus processos seletivos.</p>
+        <p>Acompanhe seus processos seletivos.</p>
 
-      <!-- CARDS -->
-      <div class="cards">
+        <!-- CARDS -->
+        <div class="cards">
 
-        <div class="card">
-          <span class="number">3</span>
-          <span class="label">Vagas ativas</span>
+          <div class="card">
+            <span class="number">3</span>
+            <span class="label">Vagas ativas</span>
+          </div>
+
+          <div class="card">
+            <span class="number blue">81</span>
+            <span class="label">Candidatos totais</span>
+          </div>
+
         </div>
 
-        <div class="card">
-          <span class="number blue">81</span>
-          <span class="label">Candidatos totais</span>
+        <!-- BUTTON -->
+        <button class="btn-vaga">
+          <a href="cadastro_vaga.php">
+            + Publicar Nova Vaga
+          </a>
+        </button>
+
+      </div>
+
+    </section>
+
+    <!-- JOBS -->
+    <section class="jobs">
+
+      <div class="jobs-header">
+
+        <h2>Suas vagas</h2>
+
+      </div>
+
+      <!-- CARD -->
+      <div class="job-card">
+
+        <div class="job-top">
+
+          <div>
+            <h3>Desenvolvedor(a) Front-end Senior</h3>
+
+            <span class="status active">
+              Ativa
+            </span>
+          </div>
+
+          <a href="pre_selecao.php">
+            <span class="arrow">›</span>
+          </a>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="job-bottom">
+
+          <span class="people">👥24 inscritos</span>
+
+          <span class="new">•5 novos</span>
+
         </div>
 
       </div>
 
-      <!-- BUTTON -->
-      <button class="btn-vaga">
-        <a href="cadastro_vaga.php">
-          + Publicar Nova Vaga
-        </a>
-      </button>
+      <!-- CARD -->
+      <div class="job-card">
 
-    </div>
+        <div class="job-top">
 
-  </section>
+          <div>
+            <h3>Product Manager Pleno</h3>
 
-  <!-- JOBS -->
-  <section class="jobs">
+            <span class="status active">
+              Ativa
+            </span>
+          </div>
 
-    <div class="jobs-header">
-
-      <h2>Suas vagas</h2>
-
-    </div>
-
-    <!-- CARD -->
-    <div class="job-card">
-
-      <div class="job-top">
-
-        <div>
-          <h3>Desenvolvedor(a) Front-end Senior</h3>
-
-          <span class="status active">
-            Ativa
-          </span>
-        </div>
-
-        <a href="pre_selecao.php">
           <span class="arrow">›</span>
-        </a>
 
-      </div>
-
-      <div class="divider"></div>
-
-      <div class="job-bottom">
-
-        <span class="people">👥24 inscritos</span>
-
-        <span class="new">•5 novos</span>
-
-      </div>
-
-    </div>
-
-    <!-- CARD -->
-    <div class="job-card">
-
-      <div class="job-top">
-
-        <div>
-          <h3>Product Manager Pleno</h3>
-
-          <span class="status active">
-            Ativa
-          </span>
         </div>
 
-        <span class="arrow">›</span>
+        <div class="divider"></div>
 
-      </div>
+        <div class="job-bottom">
 
-      <div class="divider"></div>
+          <span class="people">👥12 inscritos</span>
 
-      <div class="job-bottom">
+          <span class="new">•2 novos</span>
 
-        <span class="people">👥12 inscritos</span>
-
-        <span class="new">•2 novos</span>
-
-      </div>
-
-    </div>
-
-    <!-- CARD -->
-    <div class="job-card">
-
-      <div class="job-top">
-
-        <div>
-          <h3>UX/UI Designer</h3>
-
-          <span class="status paused">
-            Pausada
-          </span>
         </div>
 
-        <span class="arrow">›</span>
+      </div>
+
+      <!-- CARD -->
+      <div class="job-card">
+
+        <div class="job-top">
+
+          <div>
+            <h3>UX/UI Designer</h3>
+
+            <span class="status paused">
+              Pausada
+            </span>
+          </div>
+
+          <span class="arrow">›</span>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="job-bottom">
+
+          <span class="people">👥45 inscritos</span>
+
+        </div>
 
       </div>
 
-      <div class="divider"></div>
-
-      <div class="job-bottom">
-
-        <span class="people">👥45 inscritos</span>
-
-      </div>
-
-    </div>
-
-  </section>
+    </section>
 
 </body>
 
