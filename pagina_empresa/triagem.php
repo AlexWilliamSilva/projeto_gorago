@@ -19,13 +19,16 @@
 
   <div class="page-scale">
 
+<!--NAV BAR---------------------------------------------------------------------------------->
+
     <nav>
       <?php
         include_once "includes/nav.php";
       ?>
     </nav>
 
-    <!-- CARD -->
+<!--CARDS---------------------------------------------------------------------------------->
+
     <main class="cards-container">
 
       <div class="candidate-card">
@@ -33,6 +36,8 @@
         <div class="candidate-left">
 
           <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Ana Beatriz">
+
+    <!--CARD 1---------------------------------------------------------------------------------->
 
           <div class="candidate-info">
 
@@ -44,6 +49,7 @@
 
               <span class="dot"></span>
 
+          <!--COMPATIBILIDADE COM A VAGA---------------------------------------------------------------------------------->
               <span class="match">94% Match</span>
 
             </div>

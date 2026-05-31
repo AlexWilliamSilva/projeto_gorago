@@ -184,19 +184,6 @@ small {
     transform: translateY(-2px);
 }
 
-/* Seta */
-.arrow-down {
-    display: inline-block;
-    font-size: 20px;
-    font-weight: bold;
-    transform: rotate(90deg);
-    transition: transform 0.3s ease;
-}
-
-.nav-auth-container:hover .arrow-down {
-    transform: rotate(270deg);
-}
-
 /* Dropdown */
 .login-dropdown {
     position: absolute;

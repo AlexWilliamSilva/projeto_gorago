@@ -10,7 +10,7 @@
 </head>
 <body>
 
-  <!-- NAVBAR SUPERIOR COMPARTILHADA -->
+<!--NAV BAR---------------------------------------------------------------------------------->
   <nav class="navbar">
     <div class="nav-logo">
       <span class="logo-go">GO</span>

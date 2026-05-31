@@ -10,6 +10,7 @@
 </head>
 <body>
 
+<!--NAV BAR---------------------------------------------------------------------------------->
   <?php
     include_once "../includes/nav_candidato.php";
   ?>
@@ -64,7 +65,7 @@
 
       </section>
 
-      <!-- SEÇÃO: DESCRIÇÃO DA VAGA -->
+      <!-- DESCRIÇÃO DA VAGA -->
       <section class="card full-width">
         <h2>Descrição da vaga</h2>
         <p>
@@ -72,7 +73,7 @@
         </p>
       </section>
 
-      <!-- SEÇÃO GRID: RESPONSABILIDADES & REQUISITOS -->
+      <!-- RESPONSABILIDADES & REQUISITOS -->
       <div class="job-grid">
         
         <!-- Responsabilidades (Com ícones de check da imagem) -->
@@ -86,7 +87,7 @@
           </ul>
         </section>
 
-        <!-- Requisitos (Com marcadores normais) -->
+        <!-- Requisitos -->
         <section class="card">
           <h2>Requisitos e qualificações</h2>
           <ul class="dot-list">
@@ -99,7 +100,7 @@
 
       </div>
 
-      <!-- SEÇÃO: INFORMAÇÕES ADICIONAIS -->
+      <!-- INFORMAÇÕES ADICIONAIS -->
       <section class="card full-width">
         <h2>Informações adicionais</h2>
         <p>
@@ -110,7 +111,7 @@
     </main>
   </div>
 
-  <!-- BARRA DE AÇÕES FIXA NO RODAPÉ DE PONTA A PONTA -->
+  <!-- BARRA DE AÇÕES -->
   <footer class="action-footer">
     <div class="actions-wrapper">
 

@@ -9,6 +9,7 @@
 </head>
 <body>
 
+<!--NAV BAR---------------------------------------------------------------------------------->
     <nav>
         <?php
             include_once "../includes/nav_candidato.php";

@@ -19,13 +19,14 @@
 
   <div class="page-scale">
 
+<!--NAV BAR---------------------------------------------------------------------------------->
     <nav>
       <?php
         include_once "includes/nav.php";
       ?>
     </nav>
 
-    <!-- EMPTY STATE -->
+    <!--PAGINA VAZIA---------------------------------------------------------------------------------->
     <main class="empty-state">
 
       <div class="empty-content">

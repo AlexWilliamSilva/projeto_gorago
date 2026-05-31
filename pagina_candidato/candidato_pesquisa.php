@@ -10,8 +10,8 @@
 </head>
 <body>
 
+<!--NAV BAR---------------------------------------------------------------------------------->
   <nav>
-    <!-- O botão solto que estava aqui foi removido para não quebrar o layout flex do body -->
     <?php
       include_once "../includes/nav_candidato.php";
     ?>

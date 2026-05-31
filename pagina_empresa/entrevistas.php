@@ -15,12 +15,14 @@
 
   <div class="page-scale">
 
+<!--NAV BAR---------------------------------------------------------------------------------->
     <nav>
       <?php
         include_once "includes/nav.php";
       ?>
     </nav>
 
+<!--CARDS---------------------------------------------------------------------------------->
     <main class="content">
 
       <div class="candidate-card">
@@ -28,12 +30,14 @@
         <div class="candidate-left">
           <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Pedro Costa" />
 
+      <!--CARD 1  ---------------------------------------------------------------------------------->
           <div class="candidate-info">
             <h2>Pedro Costa</h2>
 
             <div class="candidate-sub">
               Desenvolvedor de Software
               <span class="dot"></span>
+      <!--COMPATIBILIDADE COM A VAGA---------------------------------------------------------------------------------->
               <span class="match">72% Match</span>
             </div>
           </div>

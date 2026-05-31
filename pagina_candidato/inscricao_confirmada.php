@@ -8,7 +8,6 @@
 
   <link rel="stylesheet" href="styles/inscricao_confirmada.css" />
 
-  <!-- Font Awesome -->
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
@@ -21,7 +20,7 @@
       <i class="fa-solid fa-check"></i>
     </div>
 
-    <!-- TEXOS -->
+    <!-- TEXTOS -->
     <div class="success-content">
 
       <h1>Inscrição enviada!</h1>

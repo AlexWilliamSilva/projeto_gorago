@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <!-- CABEÇALHO DO FLUXO (NAV) -->
+<!--NAV BAR---------------------------------------------------------------------------------->
     <header class="flow-header">
         <a href="home_empresa.php" class="back-arrow-btn" title="Voltar">
             <span class="arrow-icon"></span>

@@ -14,28 +14,29 @@
 
 <body>
 
-    <!-- HEADER -->
+<!--HEADER---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <header class="header">
         <div class="container header-content">
 
+    <!--LOGO---------------------------------------------------------------------------------->
             <div class="logo">
                 <img src="multimidia/logo_empresas/logonav.png" alt="GoraGO">
             </div>
 
+    <!--SEARCH-BAR------------------------------------------------------------------------------>
             <div class="search-bar">
                 <i data-lucide="search"></i>
                 <input type="text" placeholder="Busque por palavras-chave ou cargos">
             </div>
 
-            <!-- Container do botão + menu flutuante -->
+            <!-- BOTAO + MENU -->
             <div class="nav-auth-container">
 
                 <button class="btn-primary" id="btnEntrar">
                     Entrar
-                    <span class="arrow-down">></span>
                 </button>
 
-                <!-- Menu Popup -->
+                <!-- POPUP -->
                 <div class="login-dropdown">
 
                     <a href="autentication/candidato/login_candidato.html" class="dropdown-item">
@@ -55,7 +56,7 @@
         </div>
     </header>
 
-    <!-- HERO -->
+    <!-- HERO ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <section class="hero">
 
         <div class="hero-overlay"></div>
@@ -75,6 +76,7 @@
 
             </div>
 
+             <!-- CARD ---------------------------------------------------------------------------------->
             <div class="hero-card">
 
                 <div class="input-group">
@@ -95,7 +97,7 @@
 
     </section>
 
-    <!-- BENEFITS -->
+<!-- BENEFICIOS ------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <section class="benefits">
 
         <div class="container benefits-grid">
@@ -144,7 +146,7 @@
 
     </section>
 
-    <!-- EMPRESAS -->
+<!-- PARA EMPRESAS --------------------------------------------------------------------------------------------------------------------------------->
     <section class="companies">
 
         <div class="section-title">
@@ -216,17 +218,17 @@
 
     </section>
 
-    <!-- STATS -->
+<!-- STATS --------------------------------------------------------------------------------------------------------------------------------->
     <section class="stats">
 
         <div class="container stats-content">
 
-            <!-- IMAGEM -->
+            <!-- IMAGEM ------------------------------------------------------------------->
             <div class="companies-image">
                 <img src="multimidia/logo_empresas/Profissionais.png " alt="">
             </div>
 
-            <!-- TEXO -->
+            <!-- TEXTO --------------------------------------------------------------------->
             <div class="stats-info">
 
                 <div class="companies-text">
@@ -242,7 +244,7 @@
 
                 </div>
 
-                <!-- LISTA -->
+                <!-- LISTA ---------------------------------------------------------------------->
                 <div class="companies-list">
 
                     <div class="list-item">
@@ -281,7 +283,7 @@
 
         </div>
 
-        <!-- ESTATÍSTICAS -->
+        <!-- ESTATÍSTICAS -------------------------------------------------------------------------->
         <div class="container stats-grid">
 
             <div class="stat-card">
@@ -321,7 +323,7 @@
 
     </section>
 
-    <!-- CTA -->
+    <!-- CTA (CALL TO ACTION) ---------------------------------------------------------->
     <section class="cta">
 
         <div class="container">

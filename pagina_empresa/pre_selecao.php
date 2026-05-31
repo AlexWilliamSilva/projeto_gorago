@@ -19,16 +19,17 @@
 
   <div class="page-scale">
 
+<!--NAV BAR---------------------------------------------------------------------------------->
     <nav>
       <?php
         include_once "includes/nav.php";
       ?>
     </nav>
 
-    <!-- CARDS -->
+<!--CARD---------------------------------------------------------------------------------->
     <main class="cards-container">
 
-      <!-- CARD 1 -->
+      <!--CARD 1---------------------------------------------------------------------------------->
       <div class="candidate-card">
 
         <div class="candidate-left">
@@ -45,6 +46,7 @@
 
               <span class="dot"></span>
 
+      <!--COMPATIBILIDADE COM A VAGA---------------------------------------------------------------------------------->
               <span class="match">85% Match</span>
 
             </div>

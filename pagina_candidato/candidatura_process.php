@@ -15,6 +15,7 @@
     <img src="imagens/voltar.svg" alt="Voltar para a página anterior">
   </a>
 
+<!--NAV BAR---------------------------------------------------------------------------------->
   <nav>
     <?php
       include_once "../includes/nav_candidato.php";

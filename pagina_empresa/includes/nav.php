@@ -125,6 +125,7 @@
     </style>
 </head>
 
+
 <body>
     <?php
         $pagina_atual = basename($_SERVER['SCRIPT_NAME']);

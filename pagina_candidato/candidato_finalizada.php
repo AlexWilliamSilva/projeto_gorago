@@ -6,7 +6,6 @@
   <title>Minhas Candidaturas Finalizadas - GoraGO</title>
   <link rel="stylesheet" href="styles/candidato_pro_fi_can.css">
   
-  <!-- CORRIGIDO: Adicionado o link oficial do Font Awesome para carregar todos os ícones da interface -->
   <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 <body>
@@ -15,7 +14,7 @@
     <img src="imagens/voltar.svg" alt="Voltar para a página anterior">
   </a>
 
-  <!-- NAVBAR SUPERIOR COMPARTILHADA -->
+<!--NAV BAR---------------------------------------------------------------------------------->
   <nav>
     <?php
       include_once "../includes/nav_candidato.php";
@@ -27,7 +26,7 @@
 
     <main class="candidaturas-container">
       
-      <!-- SUB-HEADER COM TÍTULO E BOTÃO VOLTAR -->
+      <!-- TÍTULO E BOTÃO VOLTAR -->
       <div class="page-header">
         <a href="candidato_pesquisa.html" class="back-link">
           <i class="fa-solid fa-arrow-left"></i>

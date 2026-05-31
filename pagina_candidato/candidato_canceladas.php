@@ -6,15 +6,15 @@
   <title>Minhas Candidaturas Canceladas - GoraGO</title>
   <link rel="stylesheet" href="styles/candidato_pro_fi_can.css">
   
-  <!-- CORRIGIDO: Link CDN oficial do Font Awesome para carregar todos os ícones da interface -->
   <link rel="stylesheet" href="https://cloudflare.com">
 </head>
 <body>
 
+<!--BOTÃO VOLTAR---------------------------------------------------------------------------------->
   <a href="home_candidato.php" class="btn-voltar">
     <img src="imagens/voltar.svg" alt="Voltar para a página anterior">
   </a>
-  <!-- NAVBAR SUPERIOR COMPARTILHADA -->
+<!--NAV BAR---------------------------------------------------------------------------------->
   <nav>
     <?php
       include_once "../includes/nav_candidato.php";

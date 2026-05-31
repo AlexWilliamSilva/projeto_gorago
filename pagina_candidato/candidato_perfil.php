@@ -10,6 +10,7 @@
 
 <body>
 
+<!--NAV BAR---------------------------------------------------------------------------------->
     <nav>
         <?php
             include_once "../includes/nav_candidato.php";
@@ -24,7 +25,7 @@
     <!-- CONTEÚDO PRINCIPAL DO PERFIL -->
     <main class="profile-main"> 
 
-        <!-- SEÇÃO 1: CABEÇALHO DO PERFIL (FOTO E INFORMAÇÕES) -->
+        <!-- SEÇÃO 1: FOTO E INFO DO PERFIL -->
         <section class="user-hero-section">
             <div class="user-avatar-wrapper">
                 <img src="../multimidia/avatar_candidato.png" alt="Foto de Alex Silva">
