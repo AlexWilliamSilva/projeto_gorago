@@ -36,6 +36,7 @@ body {
     border-bottom: 1px solid #f1f3f7;
 }
 
+
 .back-btn {
     text-decoration: none;
     color: #1f2226;
@@ -57,6 +58,10 @@ body {
     font-weight: 700;
     color: #1f2226;
     text-align: center;
+    margin-top: 25px;
+}
+.top-bar .btn-voltar {
+    margin-top: 15px;
 }
 
 .spacer {
