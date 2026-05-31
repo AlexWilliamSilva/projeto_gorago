@@ -1,167 +1,181 @@
- 
-         /* RESET BÁSICO */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, Helvetica, sans-serif;
-        }
+/* RESET BÁSICO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
-        /* HEADER */
+/* HEADER */
+header {
+    width: 100%;
+    height: 120px;
+    background-color: white;
 
-        header{
-            width: 100%;
-            height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-            background-color: white;
+    padding: 0 50px;
 
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
+    border-bottom: 1px solid #d9d9d9;
+}
 
-            padding: 0 50px;
+.logo {
+    display: flex;
+    align-items: center;
+}
 
-            border-bottom: 1px solid #d9d9d9;
-        }
+.logo img {
+    margin-left:20px;
+    width: 100px;
+    display: block;
+}
 
-        .logo img {
-            width: 73px;
-        }
+/* CONTAINER DO COMPONENTE */
+.profile_user {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
 
-        /* CONTAINER DO COMPONENTE */
-        .profile_user {
-            position: relative; /* Mantém o menu flutuante preso ao botão da direita */
-            display: flex;
-            align-items: center;
-        }
+/* ESCONDE O CHECKBOX */
+input[type="checkbox"].menu-checkbox {
+    display: none !important;
+}
 
-        /* Esconde completamente o input checkbox da tela */
-        input[type="checkbox"].menu-checkbox {
-            display: none !important;
-        }
+/* BOTÃO DO AVATAR */
+.menu-trigger {
+    width: 58px;
+    height: 58px;
 
-        /* O BOTÃO DE GATILHO (ÍCONE DE HAMBÚRGUER) */
-        .menu-trigger {
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            user-select: none;
-        }
+    border-radius: 50%;
+    overflow: hidden;
 
-        .menu-trigger i {
-            font-size: 32px; /* Tamanho original que você usava no projeto */
-            color: #1f1f1f;
-            transition: color 0.2s ease;
-        }
+    cursor: pointer;
 
-        .menu-trigger:hover i {
-            color: #1550ff; /* Muda de cor ao passar o mouse */
-        }
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-        /* CAIXA DO POP-UP (ESCONDIDA POR PADRÃO) */
-        .dropdown-menu-box {
-            position: absolute;
-            top: 50px; /* Distância para brotar logo abaixo do ícone */
-            right: 0;  /* Alinha rente ao canto direito da tela */
-            width: 280px;
-            background: white;
-            border-radius: 16px;
-            box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08), 0px 2px 6px rgba(0, 0, 0, 0.04);
-            padding: 16px 0;
-            z-index: 2000;
-            
-            /* Configuração de transição suave */
-            display: none;
-            opacity: 0;
-            transform: translateY(-10px);
-            transition: opacity 0.2s ease, transform 0.2s ease;
-        }
+    user-select: none;
 
-        /* MÁGICA DO CSS: Quando o usuário clica no ícone, o checkbox é marcado e o menu aparece */
-        .menu-checkbox:checked ~ .dropdown-menu-box {
-            display: block;
-            opacity: 1;
-            transform: translateY(0);
-        }
+    background-color: #dfe4ee;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 
-        /* INFORMAÇÕES DO USUÁRIO (TOPO DO POP-UP) */
-        .user-header-info {
-            padding: 4px 20px 12px 20px;
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-        }
+    transition: transform 0.2s ease;
+}
 
-        .user-name {
-            font-size: 16px;
-            font-weight: 700;
-            color: #1f1f1f;
-        }
+.menu-trigger:hover {
+    transform: scale(1.05);
+}
 
-        .user-email {
-            font-size: 14px;
-            font-weight: 400;
-            color: #7f8a9b;
-        }
+.menu-trigger img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
-        /* LINHAS DIVISÓRIAS */
-        .menu-divider {
-            border: none;
-            border-bottom: 1px solid #e4e7ef;
-            margin: 8px 0;
-        }
+/* POPUP */
+.dropdown-menu-box {
+    position: absolute;
+    top: 55px;
+    right: 0;
 
-        /* LINKS DE OPÇÃO */
-        .menu-item-link {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 12px 20px;
-            font-size: 15px;
-            font-weight: 600;
-            color: #1f1f1f;
-            text-decoration: none;
-            transition: background-color 0.2s ease;
-        }
+    width: 280px;
 
-        .menu-item-link:hover {
-            background-color: #f6f6f7;
-        }
+    background: white;
+    border-radius: 16px;
 
-        /* ÍCONES DO FONTAWESOME DENTRO DO MENU */
-        .menu-icon {
-            font-size: 18px;
-            color: #68758b;
-            width: 24px;
-            text-align: center;
-        }
+    box-shadow:
+        0px 8px 24px rgba(0, 0, 0, 0.08),
+        0px 2px 6px rgba(0, 0, 0, 0.04);
 
-        /* LINK DE LOGOUT (VERMELHO) */
-        .menu-item-link.logout-action {
-            color: #ff3b30;
-        }
+    padding: 16px 0;
 
-        .menu-item-link.logout-action .menu-icon {
-            color: #ff3b30;
-        }
-        /* Estiliza o label para ser um círculo perfeito */
-        .menu-trigger {
-            width: 46px;
-            height: 46px;
-            border-radius: 50%;
-            overflow: hidden;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-            user-select: none;
-        }
+    z-index: 2000;
 
-        /* Força a foto a preencher o círculo sem distorcer */
-        .menu-trigger img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+
+    transition:
+        opacity 0.2s ease,
+        transform 0.2s ease;
+        margin-top : 10px;
+}
+
+/* MOSTRA O MENU */
+.menu-checkbox:checked ~ .dropdown-menu-box {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* TOPO DO MENU */
+.user-header-info {
+    padding: 4px 20px 12px 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 2px;
+}
+
+.user-name {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1f1f1f;
+}
+
+.user-email {
+    font-size: 13px;
+    font-weight: 400;
+    color: #7f8a9b;
+}
+
+/* DIVISÓRIAS */
+.menu-divider {
+    border: none;
+    border-bottom: 1px solid #e4e7ef;
+    margin: 8px 0;
+}
+
+/* LINKS */
+.menu-item-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 12px 20px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #1f1f1f;
+    text-decoration: none;
+
+    transition: background-color 0.2s ease;
+}
+
+.menu-item-link:hover {
+    background-color: #f6f6f7;
+}
+
+/* ÍCONES */
+.menu-icon {
+    font-size: 16px;
+    color: #68758b;
+
+    width: 24px;
+    text-align: center;
+}
+
+/* LOGOUT */
+.menu-item-link.logout-action {
+    color: #ff3b30;
+}
+
+.menu-item-link.logout-action .menu-icon {
+    color: #ff3b30;
+}

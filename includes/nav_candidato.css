@@ -29,7 +29,8 @@
             height: 45px;
             display: flex;
             align-items: center;
-            gap: 20px; /* Distância perfeita entre a lupa CSS e o input */
+            gap: 20px;
+            /* Distância perfeita entre a lupa CSS e o input */
         }
 
         /* ==========================================================================
@@ -39,7 +40,8 @@
             position: relative;
             width: 20px;
             height: 20px;
-            border: 2.5px solid #1f1f1f; /* Aro redondo da lupa */
+            border: 2.5px solid #1f1f1f;
+            /* Aro redondo da lupa */
             border-radius: 50%;
             display: inline-block;
             flex-shrink: 0;
@@ -53,8 +55,10 @@
             right: -6px;
             width: 9px;
             height: 2.5px;
-            background-color: #1f1f1f; /* Cor do cabo combinando com o aro */
-            transform: rotate(45deg); /* Inclinação perfeita do cabo */
+            background-color: #1f1f1f;
+            /* Cor do cabo combinando com o aro */
+            transform: rotate(45deg);
+            /* Inclinação perfeita do cabo */
             border-radius: 2px;
         }
 
@@ -92,14 +96,16 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
             user-select: none;
             transition: transform 0.2s ease;
-            background-color: #dfe4ee; /* Caso a foto falhe, mostra um fundo neutro */
+            background-color: #dfe4ee;
+            /* Caso a foto falhe, mostra um fundo neutro */
         }
 
         .menu-trigger:hover {
-            transform: scale(1.05); /* Leve efeito de zoom ao passar o mouse */
+            transform: scale(1.05);
+            /* Leve efeito de zoom ao passar o mouse */
         }
 
         .menu-trigger img {
@@ -111,15 +117,15 @@
         /* CAIXA DO POP-UP */
         .dropdown-menu-box {
             position: absolute;
-            top: 55px; 
-            right: 0;  
+            top: 55px;
+            right: 0;
             width: 280px;
             background-color: #ffffff;
             border-radius: 16px;
             box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08), 0px 2px 6px rgba(0, 0, 0, 0.04);
             padding: 16px 0;
             z-index: 2000;
-            
+
             /* Estado oculto padrão */
             display: none;
             opacity: 0;
@@ -128,7 +134,7 @@
         }
 
         /* Exibe o menu ao clicar */
-        .menu-checkbox:checked ~ .dropdown-menu-box {
+        .menu-checkbox:checked~.dropdown-menu-box {
             display: block;
             opacity: 1;
             transform: translateY(0);
