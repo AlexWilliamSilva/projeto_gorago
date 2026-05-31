@@ -29,23 +29,32 @@
 
             <!-- Container do botão + menu flutuante -->
             <div class="nav-auth-container">
-                <button class="btn-primary" id="btnEntrar">Entrar<span class="arrow-down">></span></button>
 
-                <!-- Menu Popup (Dropdown) -->
-                <div class="login-dropdown" id="dropdownLogin">
+                <button class="btn-primary" id="btnEntrar">
+                    Entrar
+                    <span class="arrow-down">></span>
+                </button>
+
+                <!-- Menu Popup -->
+                <div class="login-dropdown">
+
                     <a href="autentication/candidato/login_candidato.html" class="dropdown-item">
                         <span>Candidato</span>
                         <i data-lucide="user"></i>
                     </a>
+
                     <a href="autentication/empresa/login_empresa.html" class="dropdown-item">
                         <span>Empresa</span>
                         <i data-lucide="building"></i>
                     </a>
+
                 </div>
+
             </div>
 
         </div>
     </header>
+
     <!-- HERO -->
     <section class="hero">
 

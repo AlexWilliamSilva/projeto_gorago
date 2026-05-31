@@ -163,41 +163,29 @@ small {
     width: 100%;
 }
 
-/* Container pai relativo */
+/* Container */
 .nav-auth-container {
     position: relative;
     display: inline-block;
-    /* Dica extra: garante um pequeno espaço invisível para o mouse não perder o foco ao descer para o menu */
-    padding-bottom: 8px; 
+    padding-bottom: 8px;
     margin-bottom: -8px;
 }
 
-/* Estilo do Popup (Escondido por padrão) */
-.login-dropdown {
-    display: none;
-    position: absolute;
-    top: 100%; /* Ajustado para alinhar perfeitamente com o padding do container */
-    right: 0;
-    width: 220px;
-    background-color: #0045c4; /* Azul igual ao da imagem */
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    z-index: 100;
-}
-
-/* NOVA REGRA: Mostra o menu quando o usuário passa o mouse pelo container ou pelo botão */
-.nav-auth-container:hover .login-dropdown {
-    display: block;
-}
-
-#btnEntrar{
+/* Botão */
+#btnEntrar {
     display: flex;
     align-items: center;
     gap: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
 }
 
-.arrow-down{
+.nav-auth-container:hover #btnEntrar {
+    transform: translateY(-2px);
+}
+
+/* Seta */
+.arrow-down {
     display: inline-block;
     font-size: 20px;
     font-weight: bold;
@@ -205,38 +193,94 @@ small {
     transition: transform 0.3s ease;
 }
 
-.nav-auth-container:hover .arrow-down{
+.nav-auth-container:hover .arrow-down {
     transform: rotate(270deg);
 }
 
-/* Itens do menu */
+/* Dropdown */
+.login-dropdown {
+    position: absolute;
+    top: calc(100% + 5px);
+    right: 0;
+
+    width: 220px;
+
+    background-color: #0045c4;
+    border-radius: 8px;
+    overflow: hidden;
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+
+    /* Estado inicial */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        visibility 0.3s ease;
+}
+
+/* Mostrar menu */
+.nav-auth-container:hover .login-dropdown {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Itens */
 .dropdown-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 14px 16px;
+
     color: white;
     text-decoration: none;
     font-family: sans-serif;
     font-size: 15px;
-    transition: background 0.2s ease;
+
+    opacity: 0;
+    transform: translateX(-10px);
+
+    transition:
+        opacity 0.3s ease,
+        transform 0.3s ease,
+        background-color 0.2s ease;
 }
 
-/* Linha divisória entre as opções */
+/* Animação dos itens */
+.nav-auth-container:hover .dropdown-item {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.nav-auth-container:hover .dropdown-item:nth-child(1) {
+    transition-delay: 0.05s;
+}
+
+.nav-auth-container:hover .dropdown-item:nth-child(2) {
+    transition-delay: 0.1s;
+}
+
+/* Separador */
 .dropdown-item:not(:last-child) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-/* Efeito de passar o mouse nos itens internos */
+/* Hover */
 .dropdown-item:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* Tamanho dos ícones dentro do menu */
+/* Ícones */
 .dropdown-item i {
     width: 18px;
     height: 18px;
-}   
+}
 
 /* =========================
    HERO

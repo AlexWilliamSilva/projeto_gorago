@@ -42,7 +42,7 @@ body {
 }
 
 .back-area h1 {
-  font-size: 26px;
+  font-size: 36px;
   font-weight: 700;
   color: #202226;
 }
@@ -82,11 +82,76 @@ body {
   overflow: hidden;
 }
 
-.progress-fill {
-  width: 25%;
-  height: 100%;
-  background: #1140d4;
-  border-radius: 999px;
+.progress-fill{
+    height: 100%;
+    background: #1140d4;
+    border-radius: 999px;
+    transition: width .8s ease;
+}
+
+.etapa-1{
+    width: 25%;
+}
+
+.etapa-2{
+    animation: etapa2 0.8s ease forwards;
+}
+
+@keyframes etapa2{
+    from{ width: 25%; }
+    to{ width: 50%; }
+}
+
+.etapa-3{
+    animation: etapa3 0.8s ease forwards;
+}
+
+@keyframes etapa3{
+    from{ width: 50%; }
+    to{ width: 75%; }
+}
+
+.etapa-4{
+    animation: etapa4 0.8s ease forwards;
+}
+
+@keyframes etapa4{
+    from{ width: 75%; }
+    to{ width: 100%; }
+}
+
+/* BOTÃO VOLTAR */
+.btn-voltar {
+  position: absolute;
+  top: 190px;    
+  left: 40px;    
+  z-index: 9999; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;   
+  height: 64px;
+  border-radius: 50%;
+  background: #ffffff;
+  border: 3px solid #dde2ea;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-voltar img {
+  width: 54px;   
+  height: 54px;
+  display: block;
+}
+
+.btn-voltar:hover {
+  transform: translateX(-4px); 
+  background: #f7f9fc;
+  border-color: #1140d4;
+}
+
+.btn-voltar:active {
+  transform: translateX(-1px);
 }
 
 /* CONTENT */
@@ -139,7 +204,7 @@ body {
 
 .input-group label {
   display: block;
-  font-size: 20px;
+  font-size: 26px;
   font-weight: 700;
   color: #202226;
   margin-bottom: 12px;
@@ -169,7 +234,7 @@ body {
 }
 
 .input-field i {
-  font-size: 24px;
+  font-size: 27px;
   color: #71809a;
   margin-right: 16px;
   transition: color 0.25s ease;
@@ -180,7 +245,7 @@ body {
   border: none;
   outline: none;
   background: transparent;
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
   color: #202226;
 }
@@ -305,4 +370,32 @@ a {
   font-size: 18px;
   font-weight: 500;
   color: #202226;
+}
+
+.add-btn {
+  margin-top: 50px;
+  width: 450px;            
+  height: 66px;           
+  background: transparent;
+  border: 2px dashed #b3b3b3; 
+  border-radius: 18px;     
+  color: #1140d4;          
+  font-size: 20px;         
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;               
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.add-btn:hover {
+  background: rgba(17, 64, 212, 0.04); 
+  border-color: #1140d4;               
+  transform: translateY(-2px);         
+}
+
+.add-btn:active {
+  transform: translateY(1px);
 }
