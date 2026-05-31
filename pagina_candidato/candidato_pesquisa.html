@@ -1,29 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Vagas - GoraGO</title>
   <link rel="stylesheet" href="styles/candidato_pesquisa.css">
-  
+  <link rel="stylesheet" href="../includes/nav_candidato.css">
+
   <link rel="stylesheet" href="https://cloudflare.com">
 </head>
+
 <body>
 
-<!--NAV BAR---------------------------------------------------------------------------------->
-  <nav>
-    <?php
-      include_once "../includes/nav_candidato.php";
-    ?>
-  </nav>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="../multimidia/logo_empresas/logonav.png" alt="GoraGO">
+    </div>
+
+    <!-- BARRA DE PESQUISA ATUALIZADA -->
+    <div class="search-box">
+      <!-- Nova tag span que gera a lupa inteiramente via CSS -->
+      <span class="css-lens"></span>
+      <input type="text" placeholder="Busque por palavras chaves ou cargos">
+    </div>
+
+    <!-- CONTAINER DO PERFIL -->
+    <div class="profile_user">
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+      <label for="menu-toggle" class="menu-trigger" title="Menu do Usuário">
+        <img src="../multimidia/avatar_candidato.png" alt="Foto de Alex da Silva">
+      </label>
+
+      <div class="dropdown-menu-box">
+        <div class="user-header-info">
+          <span class="user-name">Alex da Silva</span>
+          <span class="user-email">alex.silva@gmail.com</span>
+        </div>
+
+        <hr class="menu-divider">
+
+        <a href="../pagina_candidato/candidato_perfil.php" class="menu-item-link">
+          <i class="fa-solid fa-gear menu-icon"></i>
+          Configurações da conta
+        </a>
+
+        <hr class="menu-divider">
+
+        <a href="../index.php" class="menu-item-link logout-action">
+          <i class="fa-solid fa-arrow-right-from-bracket menu-icon"></i>
+          Sair da conta
+        </a>
+      </div>
+    </div>
+  </header>
 
   <!-- CONTAINER PRINCIPAL (Sidebar + Feed de Vagas) -->
   <div class="main-container">
-    
+
     <!-- SIDEBAR DE FILTROS UPGRADE PROFISSIONAL -->
     <aside class="sidebar-filters">
       <div class="sidebar-header">
-        <a href="candidato_pesquisa.php" class="btn-clear-filters">Limpar</a>
+        <a href="candidato_pesquisa.html" class="btn-clear-filters">Limpar</a>
       </div>
 
       <form class="filters-form">
@@ -94,13 +134,14 @@
 
     <!-- CONTEÚDO DE VAGAS (LADO DIREITO) -->
     <main class="vagas-feed">
-      
-      <a href="home_candidato.php" class="btn-voltar">
-        <img src="../autentication/imagens/icons_nav/voltar.svg" alt="Voltar para a etapa anterior" style="width: 50px;">
+
+      <a href="home_candidato.html" class="btn-voltar">
+        <img src="../autentication/imagens/icons_nav/voltar.svg" alt="Voltar para a etapa anterior"
+          style="width: 50px;">
       </a>
-      
+
       <!-- CARD 1 -->
-      <a href="detalhes_vaga.php" style="text-decoration: none; color: inherit;">
+      <a href="detalhes_vaga.html" style="text-decoration: none; color: inherit;">
         <article class="vaga-card">
           <div class="vaga-logo-box">
             <img src="../multimidia/logo_empresas/TechCorp.png" alt="Logotipo da Empresa" class="vaga-logo-img">
@@ -118,41 +159,42 @@
       </a>
 
       <!-- CARD 2 (Selecionado / Ativo conforme a imagem) -->
-       <a href="detalhes_vaga.php" style="text-decoration: none; color: inherit;">
-      <article class="vaga-card">
-        <div class="vaga-logo-box">
-          <img src="../multimidia/logo_empresas/Nexora.png" alt="Logotipo da Empresa" class="vaga-logo-img">
-        </div>
-        <div class="vaga-info">
-          <h3>Analista de Dados Pleno</h3>
-          <p class="empresa-nome">Innova Analytics</p>
-          <div class="tags-row">
-            <span class="tag"><i class="fa-solid fa-location-dot"></i> São Paulo, SP</span>
-            <span class="tag"><i class="fa-solid fa-briefcase"></i> Híbrido</span>
-            <span class="tag">CLT</span>
+      <a href="detalhes_vaga.html" style="text-decoration: none; color: inherit;">
+        <article class="vaga-card">
+          <div class="vaga-logo-box">
+            <img src="../multimidia/logo_empresas/Nexora.png" alt="Logotipo da Empresa" class="vaga-logo-img">
           </div>
-        </div>
-      </article>
+          <div class="vaga-info">
+            <h3>Analista de Dados Pleno</h3>
+            <p class="empresa-nome">Innova Analytics</p>
+            <div class="tags-row">
+              <span class="tag"><i class="fa-solid fa-location-dot"></i> São Paulo, SP</span>
+              <span class="tag"><i class="fa-solid fa-briefcase"></i> Híbrido</span>
+              <span class="tag">CLT</span>
+            </div>
+          </div>
+        </article>
 
-      <!-- CARD 3 -->
-      <a href="detalhes_vaga.php" style="text-decoration: none; color: inherit;">
-      <article class="vaga-card">
-        <div class="vaga-logo-box">
-          <img src="../multimidia/logo_empresas/Pixelon.png" alt="Logotipo da Empresa" class="vaga-logo-img">
-        </div>
-        <div class="vaga-info">
-          <h3>Engenheiro(a) de Software</h3>
-          <p class="empresa-nome">ByteWorks</p>
-          <div class="tags-row">
-            <span class="tag"><i class="fa-solid fa-location-dot"></i> São Paulo, SP</span>
-            <span class="tag"><i class="fa-solid fa-briefcase"></i> Híbrido</span>
-            <span class="tag">CLT</span>
-          </div>
-        </div>
-      </article>
+        <!-- CARD 3 -->
+        <a href="detalhes_vaga.html" style="text-decoration: none; color: inherit;">
+          <article class="vaga-card">
+            <div class="vaga-logo-box">
+              <img src="../multimidia/logo_empresas/Pixelon.png" alt="Logotipo da Empresa" class="vaga-logo-img">
+            </div>
+            <div class="vaga-info">
+              <h3>Engenheiro(a) de Software</h3>
+              <p class="empresa-nome">ByteWorks</p>
+              <div class="tags-row">
+                <span class="tag"><i class="fa-solid fa-location-dot"></i> São Paulo, SP</span>
+                <span class="tag"><i class="fa-solid fa-briefcase"></i> Híbrido</span>
+                <span class="tag">CLT</span>
+              </div>
+            </div>
+          </article>
 
     </main>
   </div>
 
 </body>
+
 </html>

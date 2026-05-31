@@ -8,6 +8,7 @@
   <title>Gestão de Candidatos</title>
 
   <link rel="stylesheet" href="styles/pre_selecao.css">
+  <link rel="stylesheet" href="styles/nav_triagem.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,14 +20,44 @@
 
   <div class="page-scale">
 
-<!--NAV BAR---------------------------------------------------------------------------------->
-    <nav>
-      <?php
-        include_once "includes/nav.php";
-      ?>
+    <!-- HEADER -->
+    <header class="topbar">
+      <a href="home_empresa.html" class="nav-icon"><img src="../multimidia/icons_nav/voltar.svg" alt="Voltar"></a>
+      <div class="title-wrapper">
+        <h1>Desenvolvedor(a) Front-end Senior</h1>
+        <p>Gestão de Candidatos</p>
+      </div>
+
+    </header>
+
+    <!-- TABS -->
+    <nav class="tabs">
+      <a href="pre_selecao.html" class="tab-link current-tab">
+        Pré-seleção <span>2</span>
+      </a>
+
+      <a href="triagem.html" class="tab-link">
+        Triagem <span>1</span>
+      </a>
+
+      <a href="entrevistas.html" class="tab-link">
+        Entrevistas/Testes <span>1</span>
+      </a>
+
+      <a href="proposta.html" class="tab-link">
+        Proposta <span>0</span>
+      </a>
+
+      <a href="aprovados.html" class="tab-link">
+        Aprovados <span>0</span>
+      </a>
+
+      <a href="rejeitados.html" class="tab-link">
+        Rejeitados <span>0</span>
+      </a>
     </nav>
 
-<!--CARD---------------------------------------------------------------------------------->
+    <!--CARD---------------------------------------------------------------------------------->
     <main class="cards-container">
 
       <!--CARD 1---------------------------------------------------------------------------------->
@@ -46,7 +77,7 @@
 
               <span class="dot"></span>
 
-      <!--COMPATIBILIDADE COM A VAGA---------------------------------------------------------------------------------->
+              <!--COMPATIBILIDADE COM A VAGA---------------------------------------------------------------------------------->
               <span class="match">85% Match</span>
 
             </div>

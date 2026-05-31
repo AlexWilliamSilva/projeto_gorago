@@ -9,21 +9,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="includes/footer.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 
 <body>
 
-<!--HEADER---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!--HEADER---------------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <header class="header">
         <div class="container header-content">
 
-    <!--LOGO---------------------------------------------------------------------------------->
+            <!--LOGO---------------------------------------------------------------------------------->
             <div class="logo">
                 <img src="multimidia/logo_empresas/logonav.png" alt="GoraGO">
             </div>
 
-    <!--SEARCH-BAR------------------------------------------------------------------------------>
+            <!--SEARCH-BAR------------------------------------------------------------------------------>
             <div class="search-bar">
                 <i data-lucide="search"></i>
                 <input type="text" placeholder="Busque por palavras-chave ou cargos">
@@ -76,7 +77,7 @@
 
             </div>
 
-             <!-- CARD ---------------------------------------------------------------------------------->
+            <!-- CARD ---------------------------------------------------------------------------------->
             <div class="hero-card">
 
                 <div class="input-group">
@@ -97,7 +98,7 @@
 
     </section>
 
-<!-- BENEFICIOS ------------------------------------------------------------------------------------------------------------------------------------------------------------------->
+    <!-- BENEFICIOS ------------------------------------------------------------------------------------------------------------------------------------------------------------------->
     <section class="benefits">
 
         <div class="container benefits-grid">
@@ -146,7 +147,7 @@
 
     </section>
 
-<!-- PARA EMPRESAS --------------------------------------------------------------------------------------------------------------------------------->
+    <!-- PARA EMPRESAS --------------------------------------------------------------------------------------------------------------------------------->
     <section class="companies">
 
         <div class="section-title">
@@ -218,7 +219,7 @@
 
     </section>
 
-<!-- STATS --------------------------------------------------------------------------------------------------------------------------------->
+    <!-- STATS --------------------------------------------------------------------------------------------------------------------------------->
     <section class="stats">
 
         <div class="container stats-content">
@@ -338,9 +339,9 @@
                     Publique sua primeira vaga gratuitamente e descubra por que empresas escolhem o GoraGO
                 </p>
 
-                 <a href="autentication/empresa/login_empresa.html"><button class="btn-white">
-                   Publicar Vaga
-                </button></a>
+                <a href="autentication/empresa/login_empresa.html"><button class="btn-white">
+                        Publicar Vaga
+                    </button></a>
 
                 <button class="btn-outline">
                     Agendar Demo
@@ -352,10 +353,60 @@
 
     </section>
 
-    <footer>
-        <?php
-            include_once "includes/footer.php";
-        ?>
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div class="footer-brand">
+
+                <img src="multimidia/logo_empresas/logofooter.png" alt="GoraGO">
+
+                <p>
+                    © 2026 GoraGO. Todos os direitos reservados.
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <div class="footer-column">
+
+                    <h4>Para Estudantes</h4>
+
+                    <a href="#">Buscar Estágios</a>
+                    <a href="#">Buscar Trainees</a>
+                    <a href="#">Dicas de Carreira</a>
+                    <a href="#">Como Funciona</a>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h4>Para Empresas</h4>
+
+                    <a href="#">Publicar Vaga</a>
+                    <a href="#">Planos</a>
+                    <a href="#">Recursos</a>
+                    <a href="#">Suporte</a>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h4>Institucional</h4>
+
+                    <a href="#">Sobre o GoraGO</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </footer>
 
 

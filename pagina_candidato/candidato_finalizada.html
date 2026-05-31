@@ -1,31 +1,72 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Minhas Candidaturas Finalizadas - GoraGO</title>
+
   <link rel="stylesheet" href="styles/candidato_pro_fi_can.css">
-  
+  <link rel="stylesheet" href="../includes/nav_candidato.css">
+
   <link rel="stylesheet" href="https://cloudflare.com">
 </head>
+
 <body>
 
-    <a href="home_candidato.php" class="btn-voltar">
+  <a href="home_candidato.html" class="btn-voltar">
     <img src="imagens/voltar.svg" alt="Voltar para a página anterior">
   </a>
 
-<!--NAV BAR---------------------------------------------------------------------------------->
-  <nav>
-    <?php
-      include_once "../includes/nav_candidato.php";
-    ?>
-  </nav>
+  <!-- HEADER -->
+  <header>
+    <div class="logo">
+      <img src="../multimidia/logo_empresas/logonav.png" alt="GoraGO">
+    </div>
+
+    <!-- BARRA DE PESQUISA ATUALIZADA -->
+    <div class="search-box">
+      <!-- Nova tag span que gera a lupa inteiramente via CSS -->
+      <span class="css-lens"></span>
+      <input type="text" placeholder="Busque por palavras chaves ou cargos">
+    </div>
+
+    <!-- CONTAINER DO PERFIL -->
+    <div class="profile_user">
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+      <label for="menu-toggle" class="menu-trigger" title="Menu do Usuário">
+        <img src="../multimidia/avatar_candidato.png" alt="Foto de Alex da Silva">
+      </label>
+
+      <div class="dropdown-menu-box">
+        <div class="user-header-info">
+          <span class="user-name">Alex da Silva</span>
+          <span class="user-email">alex.silva@gmail.com</span>
+        </div>
+
+        <hr class="menu-divider">
+
+        <a href="../pagina_candidato/candidato_perfil.php" class="menu-item-link">
+          <i class="fa-solid fa-gear menu-icon"></i>
+          Configurações da conta
+        </a>
+
+        <hr class="menu-divider">
+
+        <a href="../index.php" class="menu-item-link logout-action">
+          <i class="fa-solid fa-arrow-right-from-bracket menu-icon"></i>
+          Sair da conta
+        </a>
+      </div>
+    </div>
+  </header>
 
   <!-- CONTAINER COM FILTRO DE ZOOM DE 75% -->
   <div class="page-scale">
 
     <main class="candidaturas-container">
-      
+
       <!-- TÍTULO E BOTÃO VOLTAR -->
       <div class="page-header">
         <a href="candidato_pesquisa.html" class="back-link">
@@ -36,9 +77,9 @@
 
       <!-- CORRIGIDO: Estrutura limpa de abas usando links estruturados de ponta a ponta -->
       <div class="tabs-navigation">
-        <a href="candidatura_process.php" class="tab-btn">Em progresso</a>
-        <a href="candidato_finalizada.php" class="tab-btn active">Finalizadas</a>
-        <a href="candidato_canceladas.php" class="tab-btn">Canceladas</a>
+        <a href="candidatura_process.html" class="tab-btn">Em progresso</a>
+        <a href="candidato_finalizada.html" class="tab-btn active">Finalizadas</a>
+        <a href="candidato_canceladas.html" class="tab-btn">Canceladas</a>
       </div>
 
       <!-- GRID DOS CARDS DE CANDIDATURA (2 itens nesta tela) -->
@@ -88,4 +129,5 @@
   </div>
 
 </body>
+
 </html>

@@ -153,6 +153,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
+
 }
 
 .match-text-area h2 {
@@ -173,13 +174,26 @@ body {
   width: 80px;
   height: 80px;
   border-radius: 50%;
-  border: 6px solid #10b981; /* Verde esmeralda exato do Match */
+
+  background:
+    conic-gradient(
+      #10b981 0deg 306deg,   /* 85% de 360° = 306° */
+      #e5e7eb 306deg 360deg
+    );
+
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  flex-shrink: 0;
-  line-height: 1.1;
+  position: relative;
+}
+
+.match-circle::before {
+  content: "";
+  position: absolute;
+  width: 68px;
+  height: 68px;
+  background: white;
+  border-radius: 50%;
 }
 
 .match-circle span {
@@ -192,6 +206,16 @@ body {
   font-size: 11px;
   font-weight: 500;
   color: #71809a;
+}
+
+.match-circle span,
+.match-circle small {
+  position: relative;
+  z-index: 1;
+}
+
+.match-circle {
+  flex-direction: column;
 }
 
 /* ==========================================================================

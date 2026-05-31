@@ -1,0 +1,165 @@
+        /* 1. RESET GLOBAL (Garante tamanhos idênticos em todas as páginas) */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        /* TOPO */
+        .topbar {
+            width: 100%;
+            height: 108px;
+            background: #f6f6f7;
+            border-bottom: 1px solid #e4e7ef;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 28px;
+        }
+
+        .nav-icon {
+            width: 50px;
+            font-size: 34px;
+            color: #1f1f1f;
+            user-select: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+
+        /* Correção para a imagem do ícone não quebrar o header */
+        .nav-icon img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .title-wrapper {
+            text-align: center;
+            flex: 1;
+        }
+
+        .title-wrapper h1 {
+            font-size: 27px;
+            font-weight: 700;
+            color: #1f1f1f;
+            margin-bottom: 5px;
+            line-height: 1.2;
+        }
+
+        .title-wrapper p {
+            font-size: 17px;
+            font-weight: 500;
+            color: #7f8a9b;
+        }
+
+        /* TABS */
+.tabs {
+    height: 72px;
+    background: #eef0f6;
+    border-bottom: 1px solid #dde2eb;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 8px;
+    padding: 0 24px;
+}
+
+.tab-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 24px;
+    height: 100%;
+    font-size: 17px;
+    font-weight: 600;
+    color: #68758b;
+    text-decoration: none;
+    position: relative;
+    transition: all .3s ease;
+    flex: 1;
+    justify-content: center;
+}
+
+.tab-link span {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #dfe4ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: #6f7c90;
+    transition: all .3s ease;
+}
+
+/* Linha inferior */
+.tab-link::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background: #1448ff;
+    border-radius: 4px 4px 0 0;
+    transform: translateX(-50%);
+    transition: width .4s ease;
+}
+
+/* Hover */
+.tab-link:hover {
+    color: #1448ff;
+}
+
+.tab-link:hover::after {
+    width: 60%;
+}
+
+.tab-link:hover span {
+    transform: scale(1.08);
+}
+
+/* Página atual */
+.current-tab {
+    color: #1448ff;
+}
+
+.current-tab span {
+    background: #1448ff;
+    color: #fff;
+    transform: scale(1.15);
+    animation: pulse .5s ease;
+}
+
+.current-tab::after {
+    width: 100%;
+    animation: activeLine .5s ease;
+}
+
+/* Animações */
+@keyframes activeLine {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(.8);
+    }
+    70% {
+        transform: scale(1.25);
+    }
+    100% {
+        transform: scale(1.15);
+    }
+}

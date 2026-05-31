@@ -1,20 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - GoraGO</title>
 
     <link rel="stylesheet" href="styles/home_candidato.css">
+    <link rel="stylesheet" href="../includes/nav_candidato.css">
 </head>
+
 <body>
 
-<!--NAV BAR---------------------------------------------------------------------------------->
-    <nav>
-        <?php
-            include_once "../includes/nav_candidato.php";
-        ?>
-    </nav>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="../multimidia/logo_empresas/logonav.png" alt="GoraGO">
+        </div>
+
+        <!-- BARRA DE PESQUISA ATUALIZADA -->
+        <div class="search-box">
+            <!-- Nova tag span que gera a lupa inteiramente via CSS -->
+            <span class="css-lens"></span>
+            <input type="text" placeholder="Busque por palavras chaves ou cargos">
+        </div>
+
+        <!-- CONTAINER DO PERFIL -->
+        <div class="profile_user">
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+            <label for="menu-toggle" class="menu-trigger" title="Menu do Usuário">
+                <img src="../multimidia/avatar_candidato.png" alt="Foto de Alex da Silva">
+            </label>
+
+            <div class="dropdown-menu-box">
+                <div class="user-header-info">
+                    <span class="user-name">Alex da Silva</span>
+                    <span class="user-email">alex.silva@gmail.com</span>
+                </div>
+
+                <hr class="menu-divider">
+
+                <a href="../pagina_candidato/candidato_perfil.html" class="menu-item-link">
+                    <i class="fa-solid fa-gear menu-icon"></i>
+                    Configurações da conta
+                </a>
+
+                <hr class="menu-divider">
+
+                <a href="../index.html" class="menu-item-link logout-action">
+                    <i class="fa-solid fa-arrow-right-from-bracket menu-icon"></i>
+                    Sair da conta
+                </a>
+            </div>
+        </div>
+    </header>
 
     <!-- MAIN -->
     <main>
@@ -31,7 +71,7 @@
                     <h3>DSM • Front-End Developer</h3>
                     <p>Itapira, SP</p>
 
-                    <a href="candidato_perfil.php">Ver Mais</a>
+                    <a href="candidato_perfil.html">Ver Mais</a>
                 </div>
 
             </div>
@@ -114,7 +154,7 @@
 
             </div>
 
-            <button style="color: white;"><a href="candidato_pesquisa.php">Ver mais</a></button>
+            <button style="color: white;"><a href="candidato_pesquisa.html">Ver mais</a></button>
 
         </section>
 
@@ -193,11 +233,12 @@
 
             </div>
 
-            <button><a href="candidatura_process.php">Ver mais</a></button>
+            <button><a href="candidatura_process.html">Ver mais</a></button>
 
         </section>
 
     </main>
 
 </body>
+
 </html>

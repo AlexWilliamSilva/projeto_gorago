@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nav empresa - GoraGO</title>
-    <style>
-        /* HEADER */
+ /* HEADER */
 
         header{
             width: 100%;
@@ -164,53 +156,3 @@
             height: 100%;
             object-fit: cover;
         }
-    </style>
-</head>
-
-<body>
-    <!-- HEADER -->
-    <header>
-        <div class="logo">
-            <img src="../multimidia/logo_empresas/logonav.png" alt="GoraGO">
-        </div>
-
-
-        <!-- CONTAINER DO PERFIL -->
-        <div class="profile_user">
-
-            <!-- 1. O checkbox (continua invisível) -->
-            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
-
-            <!-- 2. O Label com a IMAGEM dentro (Ele é o botão de clique) -->
-            <label for="menu-toggle" class="menu-trigger" title="Menu do Usuário">
-                <img src="../multimidia/logo_empresas/Techcorp.png" alt="Foto da Tech Corp">
-            </label>
-
-            <!-- 3. O Pop-up flutuante -->
-            <div class="dropdown-menu-box">
-                <div class="user-header-info">
-                    <span class="user-name">Tech Corp</span>
-                    <span class="user-email">tech.corp@gmail.com</span>
-                </div>
-
-                <hr class="menu-divider">
-
-                <a href="empresa_perfil.php" class="menu-item-link">
-                    <i class="fa-solid fa-gear menu-icon"></i>
-                    Configurações da conta
-                </a>
-
-                <hr class="menu-divider">
-
-                <a href="../index.php" class="menu-item-link logout-action">
-                    <i class="fa-solid fa-arrow-right-from-bracket menu-icon"></i>
-                    Sair da conta
-                </a>
-            </div>
-        </div>
-
-
-    </header>
-</body>
-
-</html>

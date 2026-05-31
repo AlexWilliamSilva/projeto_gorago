@@ -7,6 +7,7 @@
   <title>Dashboard Empresa</title>
 
   <link rel="stylesheet" href="styles/home-empresa.css">
+  <link rel="stylesheet" href="../includes/nav_empresa.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,11 +19,49 @@
 <body>
 
 <!--NAV BAR---------------------------------------------------------------------------------->
-    <nav>
-      <?php
-        include_once "../includes/nav_empresa.php";
-      ?>
-    </nav>
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="../multimidia/logo_empresas/logonav.png" alt="GoraGO">
+        </div>
+
+
+        <!-- CONTAINER DO PERFIL -->
+        <div class="profile_user">
+
+            <!-- 1. O checkbox (continua invisível) -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+
+            <!-- 2. O Label com a IMAGEM dentro (Ele é o botão de clique) -->
+            <label for="menu-toggle" class="menu-trigger" title="Menu do Usuário">
+                <img src="../multimidia/logo_empresas/Techcorp.png" alt="Foto da Tech Corp">
+            </label>
+
+            <!-- 3. O Pop-up flutuante -->
+            <div class="dropdown-menu-box">
+                <div class="user-header-info">
+                    <span class="user-name">Tech Corp</span>
+                    <span class="user-email">tech.corp@gmail.com</span>
+                </div>
+
+                <hr class="menu-divider">
+
+                <a href="empresa_perfil.html" class="menu-item-link">
+                    <i class="fa-solid fa-gear menu-icon"></i>
+                    Configurações da conta
+                </a>
+
+                <hr class="menu-divider">
+
+                <a href="../index.html" class="menu-item-link logout-action">
+                    <i class="fa-solid fa-arrow-right-from-bracket menu-icon"></i>
+                    Sair da conta
+                </a>
+            </div>
+        </div>
+
+
+    </header>
 
     <!-- HERO -->
     <section class="hero">
@@ -50,7 +89,7 @@
 
         <!-- BUTTON -->
         <button class="btn-vaga">
-          <a href="cadastro_vaga.php">
+          <a href="cadastro_vaga.html">
             + Publicar Nova Vaga
           </a>
         </button>
@@ -81,7 +120,7 @@
             </span>
           </div>
 
-          <a href="pre_selecao.php">
+          <a href="pre_selecao.html">
             <span class="arrow">›</span>
           </a>
 
